@@ -19,6 +19,6 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
 
         //Individual Feature Screens
-               
+
     }
 }

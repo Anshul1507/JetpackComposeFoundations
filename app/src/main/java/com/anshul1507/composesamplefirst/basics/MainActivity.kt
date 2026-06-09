@@ -1,9 +1,8 @@
-package com.anshul1507.composesamplefirst
+package com.anshul1507.composesamplefirst.basics
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -70,6 +69,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import com.anshul1507.composesamplefirst.R
 import kotlinx.serialization.Serializable
 
 class MainActivity : ComponentActivity() {
@@ -642,6 +642,6 @@ class MainActivity : ComponentActivity() {
     @Preview
     @Composable
     fun PreviewMessageCard() {
-        MessageCard(MainActivity.Message("author", "this is a sample body"))
+        MessageCard(Message("author", "this is a sample body"))
     }
 }

@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst
+package com.anshul1507.composesamplefirst.basics
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
