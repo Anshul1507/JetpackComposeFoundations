@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.examples.ScreenRoute.*
+import com.anshul1507.composesamplefirst.examples.features.DashboardScreen
 
 
 @Composable
@@ -15,7 +16,11 @@ fun AppNavGraph(myNavController: NavHostController) {
     ) {
         //Master Dashboard List Screen
         composable<Dashboard> {
-            DashboardListScreen()
+            DashboardScreen(
+                onFeatureClick = { destination ->
+                    myNavController.navigate(destination)
+                }
+            )
         }
 
         //Individual Feature Screens
