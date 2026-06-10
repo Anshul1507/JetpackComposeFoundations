@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples
+package com.anshul1507.composesamplefirst.examples.navigation
 
 import kotlinx.serialization.Serializable
 
@@ -7,9 +7,17 @@ sealed interface ScreenRoute {
     @Serializable
     data object Dashboard: ScreenRoute
 
+    /**
+     * GENERAL ROUTES
+     */
     @Serializable
     data object SimpleTextExample: ScreenRoute
+    @Serializable
+    data object ClickableExample: ScreenRoute
 
+    /**
+     * STATE MANAGEMENT ROUTES
+     */
     @Serializable
     data object ProcessDeathExample: ScreenRoute
 

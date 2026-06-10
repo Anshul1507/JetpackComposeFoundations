@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.dp
 import com.anshul1507.composesamplefirst.examples.FeatureCategory
 import com.anshul1507.composesamplefirst.examples.FeatureExample
 import com.anshul1507.composesamplefirst.examples.FeatureRegistry
-import com.anshul1507.composesamplefirst.examples.ScreenRoute
+import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,11 +1,12 @@
-package com.anshul1507.composesamplefirst.examples
+package com.anshul1507.composesamplefirst.examples.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.anshul1507.composesamplefirst.examples.ScreenRoute.*
+import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.examples.ui.DashboardScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.ClickableScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.examples.ui.stateManagement.ProcessDeathScreen
 
@@ -31,6 +32,14 @@ fun AppNavGraph(myNavController: NavHostController) {
          */
         composable<SimpleTextExample> {
             SimpleTextScreen(
+                onBack = {
+                    myNavController.popBackStack()
+                }
+            )
+        }
+
+        composable<ClickableExample> {
+            ClickableScreen(
                 onBack = {
                     myNavController.popBackStack()
                 }
