@@ -5,7 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.examples.ScreenRoute.*
-import com.anshul1507.composesamplefirst.examples.features.DashboardScreen
+import com.anshul1507.composesamplefirst.examples.ui.DashboardScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.SimpleTextScreen
+import com.anshul1507.composesamplefirst.examples.ui.stateManagement.ProcessDeathScreen
 
 
 @Composable
@@ -24,6 +26,27 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
 
         //Individual Feature Screens
+        /**
+         * GENERAL
+         */
+        composable<SimpleTextExample> {
+            SimpleTextScreen(
+                onBack = {
+                    myNavController.popBackStack()
+                }
+            )
+        }
+
+        /**
+         * STATE MANAGEMENT
+         */
+        composable<ProcessDeathExample> {
+            ProcessDeathScreen(
+                onBack = {
+                    myNavController.popBackStack()
+                }
+            )
+        }
 
     }
 }

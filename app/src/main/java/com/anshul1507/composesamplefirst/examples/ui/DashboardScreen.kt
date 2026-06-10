@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples.features
+package com.anshul1507.composesamplefirst.examples.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
