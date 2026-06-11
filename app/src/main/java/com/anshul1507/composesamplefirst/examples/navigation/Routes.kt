@@ -24,6 +24,8 @@ sealed interface ScreenRoute {
     data object AnimationBasicsExample: ScreenRoute
     @Serializable
     data object ThemeModeExample: ScreenRoute
+    @Serializable
+    data object EdgeToEdgeExample: ScreenRoute
 
     /**
      * STATE MANAGEMENT ROUTES

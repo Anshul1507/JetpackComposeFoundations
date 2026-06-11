@@ -58,6 +58,12 @@ object FeatureRegistry {
             description = "How do styles and themes work? Accessing dynamic system configurations and handling Dark Mode.",
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.ThemeModeExample
+        ),
+        FeatureExample(
+            title = "Edge-to-Edge & Window Insets",
+            description = "How do I safely draw UI content underneath the system status bar and navigation bar?",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.EdgeToEdgeExample
         )
     )
     val stateManagementList = listOf(

@@ -11,6 +11,7 @@ import com.anshul1507.composesamplefirst.examples.ui.general.AnimationBasicsScre
 import com.anshul1507.composesamplefirst.examples.ui.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.BoxStackingScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.ClickableScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.EdgeToEdgeScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.ThemeModeScreen
@@ -56,6 +57,9 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
         composable<ThemeModeExample> {
             ThemeModeScreen({ myNavController.popBackStack() })
+        }
+        composable<EdgeToEdgeExample> {
+            EdgeToEdgeScreen({ myNavController.popBackStack() })
         }
 
         /**
