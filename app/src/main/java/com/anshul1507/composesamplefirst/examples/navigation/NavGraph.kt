@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.examples.ui.DashboardScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.ClickableScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.SimpleTextScreen
@@ -40,6 +41,9 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
         composable<LayoutModifiersExample> {
             LayoutModifiersScreen({ myNavController.popBackStack() })
+        }
+        composable<BackgroundColorExample> {
+            BackgroundColorScreen({ myNavController.popBackStack() })
         }
 
         /**

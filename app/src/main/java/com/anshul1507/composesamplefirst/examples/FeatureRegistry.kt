@@ -34,6 +34,12 @@ object FeatureRegistry {
             description = "Mastering layout control: Padding, Margins, Offsets, and Fixed Aspect Ratios.",
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.LayoutModifiersExample
+        ),
+        FeatureExample(
+            title = "Background Colors & Gradients",
+            description = "How do I apply solid colors, linear gradients, and elevation-aware Surface colors?",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.BackgroundColorExample
         )
     )
     val stateManagementList = listOf(
