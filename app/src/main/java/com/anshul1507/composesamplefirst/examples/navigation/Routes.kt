@@ -14,6 +14,8 @@ sealed interface ScreenRoute {
     data object SimpleTextExample: ScreenRoute
     @Serializable
     data object ClickableExample: ScreenRoute
+    @Serializable
+    data object LayoutModifiersExample: ScreenRoute
 
     /**
      * STATE MANAGEMENT ROUTES

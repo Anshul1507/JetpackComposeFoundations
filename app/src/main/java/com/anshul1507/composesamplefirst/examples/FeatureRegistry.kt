@@ -29,6 +29,12 @@ object FeatureRegistry {
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.ClickableExample
         ),
+        FeatureExample(
+            title = "Layout Modifiers",
+            description = "Mastering layout control: Padding, Margins, Offsets, and Fixed Aspect Ratios.",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.LayoutModifiersExample
+        )
     )
     val stateManagementList = listOf(
         FeatureExample(
