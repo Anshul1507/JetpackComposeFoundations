@@ -1,6 +1,6 @@
-package com.anshul1507.composesamplefirst.examples
+package com.anshul1507.composesamplefirst.practice.data
 
-import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute
+import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute
 
 
 enum class FeatureCategory(val displayName: String) {

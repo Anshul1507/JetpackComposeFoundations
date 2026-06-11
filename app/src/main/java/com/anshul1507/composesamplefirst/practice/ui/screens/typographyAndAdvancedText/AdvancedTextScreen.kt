@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples.ui.typographyAndAdvancedText
+package com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

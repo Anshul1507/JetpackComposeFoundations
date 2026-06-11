@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ComposeSampleFirst"
         tools:targetApi="31">
         <activity
-            android:name=".examples.ActivityMain"
+            android:name=".practice.ActivityMain"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ComposeSampleFirst">

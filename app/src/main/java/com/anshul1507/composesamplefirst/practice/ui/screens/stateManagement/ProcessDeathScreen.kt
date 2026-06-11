@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples.ui.stateManagement
+package com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

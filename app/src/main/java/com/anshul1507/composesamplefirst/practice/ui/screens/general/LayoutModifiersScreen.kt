@@ -1,6 +1,5 @@
-package com.anshul1507.composesamplefirst.examples.ui.general
+package com.anshul1507.composesamplefirst.practice.ui.screens.general
 
-import android.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

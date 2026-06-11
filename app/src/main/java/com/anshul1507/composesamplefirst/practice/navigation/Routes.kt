@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples.navigation
+package com.anshul1507.composesamplefirst.practice.navigation
 
 import kotlinx.serialization.Serializable
 

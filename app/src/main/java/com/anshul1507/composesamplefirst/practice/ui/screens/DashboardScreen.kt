@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples.ui
+package com.anshul1507.composesamplefirst.practice.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -27,10 +27,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.anshul1507.composesamplefirst.examples.FeatureCategory
-import com.anshul1507.composesamplefirst.examples.FeatureExample
-import com.anshul1507.composesamplefirst.examples.FeatureRegistry
-import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute
+import com.anshul1507.composesamplefirst.practice.data.FeatureCategory
+import com.anshul1507.composesamplefirst.practice.data.FeatureExample
+import com.anshul1507.composesamplefirst.practice.data.FeatureRegistry
+import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

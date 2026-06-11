@@ -1,4 +1,4 @@
-package com.anshul1507.composesamplefirst.examples
+package com.anshul1507.composesamplefirst.practice
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,7 +9,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.anshul1507.composesamplefirst.examples.navigation.AppNavGraph
+import com.anshul1507.composesamplefirst.practice.navigation.AppNavGraph
+import com.anshul1507.composesamplefirst.practice.ui.theme.AppTheme
 
 class ActivityMain: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
