@@ -52,6 +52,12 @@ object FeatureRegistry {
             description = "How do I implement infinite rotation loops and smooth value-driven color transitions?",
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.AnimationBasicsExample
+        ),
+        FeatureExample(
+            title = "Theme & Dark Mode Styling",
+            description = "How do styles and themes work? Accessing dynamic system configurations and handling Dark Mode.",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.ThemeModeExample
         )
     )
     val stateManagementList = listOf(

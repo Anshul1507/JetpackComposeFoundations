@@ -13,6 +13,7 @@ import com.anshul1507.composesamplefirst.examples.ui.general.BoxStackingScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.ClickableScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.SimpleTextScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.ThemeModeScreen
 import com.anshul1507.composesamplefirst.examples.ui.stateManagement.ProcessDeathScreen
 
 
@@ -52,6 +53,9 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
         composable<AnimationBasicsExample> {
             AnimationBasicsScreen({ myNavController.popBackStack() })
+        }
+        composable<ThemeModeExample> {
+            ThemeModeScreen({ myNavController.popBackStack() })
         }
 
         /**

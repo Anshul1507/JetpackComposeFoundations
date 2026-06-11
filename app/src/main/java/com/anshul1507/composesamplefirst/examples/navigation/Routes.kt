@@ -22,6 +22,8 @@ sealed interface ScreenRoute {
     data object BoxStackingExample: ScreenRoute
     @Serializable
     data object AnimationBasicsExample: ScreenRoute
+    @Serializable
+    data object ThemeModeExample: ScreenRoute
 
     /**
      * STATE MANAGEMENT ROUTES
