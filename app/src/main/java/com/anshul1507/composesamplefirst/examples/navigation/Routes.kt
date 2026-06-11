@@ -18,6 +18,8 @@ sealed interface ScreenRoute {
     data object LayoutModifiersExample: ScreenRoute
     @Serializable
     data object BackgroundColorExample: ScreenRoute
+    @Serializable
+    data object BoxStackingExample: ScreenRoute
 
     /**
      * STATE MANAGEMENT ROUTES

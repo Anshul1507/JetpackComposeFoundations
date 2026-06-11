@@ -40,6 +40,12 @@ object FeatureRegistry {
             description = "How do I apply solid colors, linear gradients, and elevation-aware Surface colors?",
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.BackgroundColorExample
+        ),
+        FeatureExample(
+            title = "FrameLayout Stacking (Box)",
+            description = "How do I layer views on top of each other and anchor child items using custom alignments?",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.BoxStackingExample
         )
     )
     val stateManagementList = listOf(
