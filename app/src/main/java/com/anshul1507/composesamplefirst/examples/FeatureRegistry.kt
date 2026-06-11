@@ -46,6 +46,12 @@ object FeatureRegistry {
             description = "How do I layer views on top of each other and anchor child items using custom alignments?",
             category = FeatureCategory.GENERAL,
             destination = ScreenRoute.BoxStackingExample
+        ),
+        FeatureExample(
+            title = "Rotation & Color Animations",
+            description = "How do I implement infinite rotation loops and smooth value-driven color transitions?",
+            category = FeatureCategory.GENERAL,
+            destination = ScreenRoute.AnimationBasicsExample
         )
     )
     val stateManagementList = listOf(

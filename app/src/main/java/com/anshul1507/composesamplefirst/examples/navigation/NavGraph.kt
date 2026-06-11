@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.examples.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.examples.ui.DashboardScreen
+import com.anshul1507.composesamplefirst.examples.ui.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.BoxStackingScreen
 import com.anshul1507.composesamplefirst.examples.ui.general.ClickableScreen
@@ -48,6 +49,9 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
         composable<BoxStackingExample> {
             BoxStackingScreen({ myNavController.popBackStack() })
+        }
+        composable<AnimationBasicsExample> {
+            AnimationBasicsScreen({ myNavController.popBackStack() })
         }
 
         /**
