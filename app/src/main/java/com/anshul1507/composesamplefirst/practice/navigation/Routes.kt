@@ -31,6 +31,8 @@ sealed interface ScreenRoute {
      * STATE MANAGEMENT ROUTES
      */
     @Serializable
+    data object LocalStateExample: ScreenRoute
+    @Serializable
     data object ProcessDeathExample: ScreenRoute
 
     //As we add the features through out, just append those routes here

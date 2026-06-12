@@ -77,6 +77,12 @@ fun getGeneralRoutes(): List<FeatureExample> {
 fun getStateManagementRoutes(): List<FeatureExample> {
     return listOf(
         FeatureExample(
+            title = "Local State Mutation",
+            description = "Mastering local state tracking using remember, mutableStateOf, and continuous UI recomposition.",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.LocalStateExample
+        ),
+        FeatureExample(
             title = "Process Death Retention",
             description = "How do I retain state across process death and configuration changes?",
             category = FeatureCategory.STATE_MANAGEMENT,
