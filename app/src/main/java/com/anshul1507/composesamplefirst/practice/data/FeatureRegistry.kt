@@ -83,10 +83,10 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             destination = ScreenRoute.LocalStateExample
         ),
         FeatureExample(
-            title = "Process Death Retention",
-            description = "How do I retain state across process death and configuration changes?",
+            title = "Configuration & Process Death Survival",
+            description = "How do I retain input states across screen rotations and background OS termination using rememberSaveable?",
             category = FeatureCategory.STATE_MANAGEMENT,
-            destination = ScreenRoute.ProcessDeathExample
+            destination = ScreenRoute.SaveableStateExample
         )
     )
 }

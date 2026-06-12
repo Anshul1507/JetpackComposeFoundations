@@ -16,7 +16,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.LayoutModif
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
-import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ProcessDeathScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SaveableStateScreen
 
 
 @Composable
@@ -44,8 +44,8 @@ fun AppNavGraph(myNavController: NavHostController) {
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {
     fun onBack() = myNavController.popBackStack()
 
-    composable<ProcessDeathExample> { ProcessDeathScreen(::onBack) }
     composable<LocalStateExample> { LocalStateScreen(::onBack) }
+    composable<SaveableStateExample> { SaveableStateScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setGeneralNavGraphs(myNavController: NavHostController) {

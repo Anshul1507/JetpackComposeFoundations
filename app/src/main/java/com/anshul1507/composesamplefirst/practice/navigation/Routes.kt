@@ -33,7 +33,7 @@ sealed interface ScreenRoute {
     @Serializable
     data object LocalStateExample: ScreenRoute
     @Serializable
-    data object ProcessDeathExample: ScreenRoute
+    data object SaveableStateExample: ScreenRoute
 
     //As we add the features through out, just append those routes here
 //    @Serializable
