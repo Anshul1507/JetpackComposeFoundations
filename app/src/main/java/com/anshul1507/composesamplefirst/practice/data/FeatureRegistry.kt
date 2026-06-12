@@ -16,7 +16,13 @@ data class FeatureExample(
 )
 
 object FeatureRegistry {
-    val generalList = listOf(
+    val generalList = getGeneralRoutes()
+    val stateManagementList = getStateManagementRoutes()
+    val items = generalList + stateManagementList
+}
+
+fun getGeneralRoutes(): List<FeatureExample> {
+    return listOf(
         FeatureExample(
             title = "Simple Text",
             description = "How do I display static and styled text on the screen?",
@@ -66,7 +72,10 @@ object FeatureRegistry {
             destination = ScreenRoute.EdgeToEdgeExample
         )
     )
-    val stateManagementList = listOf(
+}
+
+fun getStateManagementRoutes(): List<FeatureExample> {
+    return listOf(
         FeatureExample(
             title = "Process Death Retention",
             description = "How do I retain state across process death and configuration changes?",
@@ -74,5 +83,4 @@ object FeatureRegistry {
             destination = ScreenRoute.ProcessDeathExample
         )
     )
-    val items = generalList + stateManagementList
 }

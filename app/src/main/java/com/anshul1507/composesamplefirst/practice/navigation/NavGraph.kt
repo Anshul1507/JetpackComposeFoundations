@@ -1,6 +1,7 @@
 package com.anshul1507.composesamplefirst.practice.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -33,40 +34,27 @@ fun AppNavGraph(myNavController: NavHostController) {
         }
 
         //Individual Feature Screens
-        /**
-         * GENERAL
-         */
-        composable<SimpleTextExample> {
-            SimpleTextScreen({ myNavController.popBackStack() })
-        }
-        composable<ClickableExample> {
-            ClickableScreen({ myNavController.popBackStack() })
-        }
-        composable<LayoutModifiersExample> {
-            LayoutModifiersScreen({ myNavController.popBackStack() })
-        }
-        composable<BackgroundColorExample> {
-            BackgroundColorScreen({ myNavController.popBackStack() })
-        }
-        composable<BoxStackingExample> {
-            BoxStackingScreen({ myNavController.popBackStack() })
-        }
-        composable<AnimationBasicsExample> {
-            AnimationBasicsScreen({ myNavController.popBackStack() })
-        }
-        composable<ThemeModeExample> {
-            ThemeModeScreen({ myNavController.popBackStack() })
-        }
-        composable<EdgeToEdgeExample> {
-            EdgeToEdgeScreen({ myNavController.popBackStack() })
-        }
-
-        /**
-         * STATE MANAGEMENT
-         */
-        composable<ProcessDeathExample> {
-            ProcessDeathScreen({ myNavController.popBackStack() })
-        }
+        setGeneralNavGraphs(myNavController)
+        setStateManagementNavGraphs(myNavController)
 
     }
+}
+
+private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<ProcessDeathExample> { ProcessDeathScreen(::onBack) }
+}
+
+private fun NavGraphBuilder.setGeneralNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<SimpleTextExample> { SimpleTextScreen(::onBack) }
+    composable<ClickableExample> { ClickableScreen(::onBack) }
+    composable<LayoutModifiersExample> { LayoutModifiersScreen(::onBack) }
+    composable<BackgroundColorExample> { BackgroundColorScreen(::onBack) }
+    composable<BoxStackingExample> { BoxStackingScreen(::onBack) }
+    composable<AnimationBasicsExample> { AnimationBasicsScreen(::onBack) }
+    composable<ThemeModeExample> { ThemeModeScreen(::onBack) }
+    composable<EdgeToEdgeExample> { EdgeToEdgeScreen(::onBack) }
 }
