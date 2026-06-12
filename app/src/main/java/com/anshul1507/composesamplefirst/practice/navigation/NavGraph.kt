@@ -15,6 +15,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.EdgeToEdgeS
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.FlowCollectionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SaveableStateScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ViewModelLiveScreen
@@ -48,6 +49,7 @@ private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHost
     composable<LocalStateExample> { LocalStateScreen(::onBack) }
     composable<SaveableStateExample> { SaveableStateScreen(::onBack) }
     composable<ViewModelLiveExample> { ViewModelLiveScreen(::onBack) }
+    composable<FlowCollectionExample> { FlowCollectionScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setGeneralNavGraphs(myNavController: NavHostController) {

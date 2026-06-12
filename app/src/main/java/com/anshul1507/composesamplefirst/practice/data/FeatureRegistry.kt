@@ -93,6 +93,12 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "How do I decouple business logic into ViewModels and collect LiveData updates safely?",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.ViewModelLiveExample
+        ),
+        FeatureExample(
+            title = "StateFlow & Coroutine Flows",
+            description = "Asynchronously collecting background streams in a lifecycle-aware manner using StateFlow.",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.FlowCollectionExample
         )
     )
 }

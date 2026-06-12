@@ -36,6 +36,8 @@ sealed interface ScreenRoute {
     data object SaveableStateExample: ScreenRoute
     @Serializable
     data object ViewModelLiveExample: ScreenRoute
+    @Serializable
+    data object FlowCollectionExample: ScreenRoute
 
     //As we add the features through out, just append those routes here
 //    @Serializable
