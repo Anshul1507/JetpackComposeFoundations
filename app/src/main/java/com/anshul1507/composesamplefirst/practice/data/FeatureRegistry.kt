@@ -99,6 +99,12 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "Asynchronously collecting background streams in a lifecycle-aware manner using StateFlow.",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.FlowCollectionExample
+        ),
+        FeatureExample(
+            title = "Side-Effects & LaunchedEffect",
+            description = "How to safely launch coroutines, handle screen entry events, and manage side-effects.",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.SideEffectsExample
         )
     )
 }
