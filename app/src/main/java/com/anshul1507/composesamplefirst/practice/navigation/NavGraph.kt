@@ -17,6 +17,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.SimpleTextS
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SaveableStateScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ViewModelLiveScreen
 
 
 @Composable
@@ -46,6 +47,7 @@ private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHost
 
     composable<LocalStateExample> { LocalStateScreen(::onBack) }
     composable<SaveableStateExample> { SaveableStateScreen(::onBack) }
+    composable<ViewModelLiveExample> { ViewModelLiveScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setGeneralNavGraphs(myNavController: NavHostController) {

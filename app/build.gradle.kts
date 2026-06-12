@@ -60,6 +60,11 @@ dependencies {
 
     implementation(libs.compose.material.icons.extended)
 
+    //viewmodel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.compose.runtime.livedata) // Provides observeAsState
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

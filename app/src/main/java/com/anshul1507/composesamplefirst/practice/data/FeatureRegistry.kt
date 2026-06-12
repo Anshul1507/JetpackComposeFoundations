@@ -87,6 +87,12 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "How do I retain input states across screen rotations and background OS termination using rememberSaveable?",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.SaveableStateExample
+        ),
+        FeatureExample(
+            title = "ViewModel & LiveData Integration",
+            description = "How do I decouple business logic into ViewModels and collect LiveData updates safely?",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.ViewModelLiveExample
         )
     )
 }
