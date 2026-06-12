@@ -105,6 +105,12 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "How to safely launch coroutines, handle screen entry events, and manage side-effects.",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.SideEffectsExample
+        ),
+        FeatureExample(
+            title = "System Back Interception",
+            description = "How to intercept, halt, and custom handle hardware or gesture system back presses.",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.BackHandlerExample
         )
     )
 }
