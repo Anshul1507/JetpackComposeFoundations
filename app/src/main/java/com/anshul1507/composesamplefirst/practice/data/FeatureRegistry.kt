@@ -111,6 +111,9 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "How to intercept, halt, and custom handle hardware or gesture system back presses.",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.BackHandlerExample
+            description = "Transforming stateful elements into pure, testable, and reusable stateless composables.",
+            category = FeatureCategory.STATE_MANAGEMENT,
+            destination = ScreenRoute.StateHoistingExample
         )
     )
 }

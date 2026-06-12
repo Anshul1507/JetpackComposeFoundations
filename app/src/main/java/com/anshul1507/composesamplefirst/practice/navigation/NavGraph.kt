@@ -20,6 +20,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.Flo
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SaveableStateScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SideEffectsScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.StateHoistingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ViewModelLiveScreen
 
 
@@ -54,6 +55,7 @@ private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHost
     composable<FlowCollectionExample> { FlowCollectionScreen(::onBack) }
     composable<SideEffectsExample> { SideEffectsScreen(::onBack) }
     composable<BackHandlerExample> { BackHandlerScreen(::onBack) }
+    composable<StateHoistingExample> { StateHoistingScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setGeneralNavGraphs(myNavController: NavHostController) {

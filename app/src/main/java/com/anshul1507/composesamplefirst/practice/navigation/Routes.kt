@@ -42,6 +42,8 @@ sealed interface ScreenRoute {
     data object SideEffectsExample: ScreenRoute
     @Serializable
     data object BackHandlerExample: ScreenRoute
+    @Serializable
+    data object StateHoistingExample: ScreenRoute
 
     //As we add the features through out, just append those routes here
 //    @Serializable
