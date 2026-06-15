@@ -56,6 +56,8 @@ sealed interface ScreenRoute {
     data object SliderExample: ScreenRoute
     @Serializable
     data object CheckboxExample: ScreenRoute
+    @Serializable
+    data object RadioButtonExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

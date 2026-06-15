@@ -146,6 +146,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Mastering binary and Tri-State checkbox hierarchies for bulk selection architectures.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.CheckboxExample
+        ),
+        FeatureExample(
+            title = "Radio Button Groups",
+            description = "Implementing mutually exclusive selection patterns using state-driven groups.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.RadioButtonExample
         )
     )
 }
