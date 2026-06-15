@@ -6,7 +6,7 @@ import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute
 enum class FeatureCategory(val displayName: String) {
     GENERAL("General Basics"),
     STATE_MANAGEMENT("State Management"),
-    MATERIAL_DESIGN("Material Design Components")
+    COMPONENTS("Material Design Components")
 }
 data class FeatureExample(
     val title: String,
@@ -117,6 +117,17 @@ fun getStateManagementRoutes(): List<FeatureExample> {
             description = "Transforming stateful elements into pure, testable, and reusable stateless composables.",
             category = FeatureCategory.STATE_MANAGEMENT,
             destination = ScreenRoute.StateHoistingExample
+        )
+    )
+}
+
+fun getComponentsRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Cards & Progress Indicators",
+            description = "Implementing standardized Material Design container cards and feedback indicators.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.MaterialComponentsExample
         )
     )
 }

@@ -45,6 +45,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object StateHoistingExample: ScreenRoute
 
+    /**
+     * MATERIAL DESIGN COMPONENTS
+     */
+    @Serializable
+    data object MaterialComponentsExample: ScreenRoute
+
     //As we add the features through out, just append those routes here
 //    @Serializable
 //    data object Example: ScreenRoute
