@@ -164,6 +164,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Building functional, state-driven bottom navigation layouts using Material 3 slots.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.BottomNavExample
+        ),
+        FeatureExample(
+            title = "Navigation Drawers",
+            description = "Implementing state-driven Modal and Dismissible navigation drawer structures.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.NavDrawerExample
         )
     )
 }

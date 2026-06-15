@@ -11,6 +11,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNa
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.FabScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.NavDrawerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.RadioButtonScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SliderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
@@ -63,6 +64,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     composable<RadioButtonExample> { RadioButtonScreen(::onBack) }
     composable<FABExample> { FabScreen(::onBack) }
     composable<BottomNavExample> { BottomNavScreen(::onBack) }
+    composable<NavDrawerExample> { NavDrawerScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {
