@@ -182,6 +182,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Mastering Standard, Filled, and Tonal buttons with custom colors, shapes, and integrated loaders.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.ButtonStylingExample
+        ),
+        FeatureExample(
+            title = "Alert Dialogs & Custom Modals",
+            description = "Mastering standard Material 3 confirmations and fully tailored, custom layout modal dialogs.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.DialogsExample
         )
     )
 }

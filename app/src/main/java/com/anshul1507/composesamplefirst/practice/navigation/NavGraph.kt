@@ -11,6 +11,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNa
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.ButtonStylingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CustomRippleScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.DialogsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.FabScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.NavDrawerScreen
@@ -69,6 +70,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     composable<NavDrawerExample> { NavDrawerScreen(::onBack) }
     composable<CustomRippleExample> { CustomRippleScreen(::onBack) }
     composable<ButtonStylingExample> { ButtonStylingScreen(::onBack) }
+    composable<DialogsExample> { DialogsScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {
