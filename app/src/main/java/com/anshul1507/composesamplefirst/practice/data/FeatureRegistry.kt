@@ -134,6 +134,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Managing message queues, executing optional visual actions, and handling asynchronous snackbar feedback loops.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.SnackbarActionExample
+        ),
+        FeatureExample(
+            title = "Continuous & Discrete Sliders",
+            description = "Mastering quantitative user selection via smooth fluid sliders and snapped discrete intervals.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.SliderExample
         )
     )
 }

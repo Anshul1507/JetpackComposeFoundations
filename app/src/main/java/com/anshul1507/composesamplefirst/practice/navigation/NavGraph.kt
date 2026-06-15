@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.SliderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BackgroundColorScreen
@@ -53,6 +54,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
 
     composable<MaterialComponentsExample> { MaterialComponentsScreen(::onBack) }
     composable<SnackbarActionExample> { SnackbarActionScreen(::onBack) }
+    composable<SliderExample> { SliderScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {

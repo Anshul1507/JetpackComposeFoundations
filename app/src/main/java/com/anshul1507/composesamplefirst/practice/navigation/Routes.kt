@@ -52,6 +52,8 @@ sealed interface ScreenRoute {
     data object MaterialComponentsExample: ScreenRoute
     @Serializable
     data object SnackbarActionExample: ScreenRoute
+    @Serializable
+    data object SliderExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
