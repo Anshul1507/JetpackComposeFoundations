@@ -60,6 +60,8 @@ sealed interface ScreenRoute {
     data object RadioButtonExample: ScreenRoute
     @Serializable
     data object FABExample: ScreenRoute
+    @Serializable
+    data object BottomNavExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

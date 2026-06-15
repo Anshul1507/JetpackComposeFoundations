@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNavScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.FabScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
@@ -61,6 +62,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     composable<CheckboxExample> { CheckboxScreen(::onBack) }
     composable<RadioButtonExample> { RadioButtonScreen(::onBack) }
     composable<FABExample> { FabScreen(::onBack) }
+    composable<BottomNavExample> { BottomNavScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {

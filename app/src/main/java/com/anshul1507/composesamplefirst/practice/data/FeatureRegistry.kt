@@ -158,6 +158,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Implementing primary screen actions using scaffold-anchored FABs and extended FAB variants.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.FABExample
+        ),
+        FeatureExample(
+            title = "Bottom Navigation Bars",
+            description = "Building functional, state-driven bottom navigation layouts using Material 3 slots.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.BottomNavExample
         )
     )
 }
