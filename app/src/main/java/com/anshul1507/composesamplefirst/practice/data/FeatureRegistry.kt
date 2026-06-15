@@ -176,6 +176,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Customizing and overriding touch interaction feedback, ripple colors, and indication scopes.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.CustomRippleExample
+        ),
+        FeatureExample(
+            title = "Button Styling & Typography",
+            description = "Mastering Standard, Filled, and Tonal buttons with custom colors, shapes, and integrated loaders.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.ButtonStylingExample
         )
     )
 }
