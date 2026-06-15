@@ -18,7 +18,9 @@ data class FeatureExample(
 object FeatureRegistry {
     val generalList = getGeneralRoutes()
     val stateManagementList = getStateManagementRoutes()
-    val items = generalList + stateManagementList
+    val componentsList = getComponentsRoutes()
+
+    val items = generalList + stateManagementList + componentsList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -194,6 +196,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Building multi-row wrapping tag layouts using Material 3 Filter Chips and ContextualFlowRow.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.FilterChipsExample
+        ),
+        FeatureExample(
+            title = "Custom Shadows & Elevation",
+            description = "Mastering Material 3 tonal elevations and constructing custom drop-shadow rendering modifiers.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.CustomShadowExample
         )
     )
 }

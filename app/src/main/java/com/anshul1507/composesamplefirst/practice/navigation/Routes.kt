@@ -72,6 +72,8 @@ sealed interface ScreenRoute {
     data object DialogsExample: ScreenRoute
     @Serializable
     data object FilterChipsExample: ScreenRoute
+    @Serializable
+    data object CustomShadowExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
