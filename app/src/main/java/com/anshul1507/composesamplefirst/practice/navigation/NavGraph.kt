@@ -13,6 +13,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.Checkbox
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CustomRippleScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.DialogsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.FabScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.FilterChipsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.NavDrawerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.RadioButtonScreen
@@ -71,6 +72,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     composable<CustomRippleExample> { CustomRippleScreen(::onBack) }
     composable<ButtonStylingExample> { ButtonStylingScreen(::onBack) }
     composable<DialogsExample> { DialogsScreen(::onBack) }
+    composable<FilterChipsExample> { FilterChipsScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {

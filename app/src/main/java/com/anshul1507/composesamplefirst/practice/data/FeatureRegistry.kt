@@ -188,6 +188,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Mastering standard Material 3 confirmations and fully tailored, custom layout modal dialogs.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.DialogsExample
+        ),
+        FeatureExample(
+            title = "Wrapping Filter Chips",
+            description = "Building multi-row wrapping tag layouts using Material 3 Filter Chips and ContextualFlowRow.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.FilterChipsExample
         )
     )
 }
