@@ -152,6 +152,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Implementing mutually exclusive selection patterns using state-driven groups.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.RadioButtonExample
+        ),
+        FeatureExample(
+            title = "Anchored Floating Action Buttons",
+            description = "Implementing primary screen actions using scaffold-anchored FABs and extended FAB variants.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.FABExample
         )
     )
 }
