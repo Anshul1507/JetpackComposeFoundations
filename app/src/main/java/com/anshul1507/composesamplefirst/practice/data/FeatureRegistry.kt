@@ -140,6 +140,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Mastering quantitative user selection via smooth fluid sliders and snapped discrete intervals.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.SliderExample
+        ),
+        FeatureExample(
+            title = "Multi-State Checkboxes",
+            description = "Mastering binary and Tri-State checkbox hierarchies for bulk selection architectures.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.CheckboxExample
         )
     )
 }
