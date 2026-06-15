@@ -9,6 +9,7 @@ import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNavScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.CustomRippleScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.FabScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.NavDrawerScreen
@@ -65,6 +66,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     composable<FABExample> { FabScreen(::onBack) }
     composable<BottomNavExample> { BottomNavScreen(::onBack) }
     composable<NavDrawerExample> { NavDrawerScreen(::onBack) }
+    composable<CustomRippleExample> { CustomRippleScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {

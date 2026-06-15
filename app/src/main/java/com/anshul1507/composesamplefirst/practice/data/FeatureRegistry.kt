@@ -170,6 +170,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Implementing state-driven Modal and Dismissible navigation drawer structures.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.NavDrawerExample
+        ),
+        FeatureExample(
+            title = "Custom Ripple Effects",
+            description = "Customizing and overriding touch interaction feedback, ripple colors, and indication scopes.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.CustomRippleExample
         )
     )
 }

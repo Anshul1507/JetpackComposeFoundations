@@ -64,6 +64,8 @@ sealed interface ScreenRoute {
     data object BottomNavExample: ScreenRoute
     @Serializable
     data object NavDrawerExample: ScreenRoute
+    @Serializable
+    data object CustomRippleExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
