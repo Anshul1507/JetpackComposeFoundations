@@ -128,6 +128,12 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Implementing standardized Material Design container cards and feedback indicators.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.MaterialComponentsExample
+        ),
+        FeatureExample(
+            title = "Dynamic Snackbars with Actions",
+            description = "Managing message queues, executing optional visual actions, and handling asynchronous snackbar feedback loops.",
+            category = FeatureCategory.COMPONENTS,
+            destination = ScreenRoute.SnackbarActionExample
         )
     )
 }

@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.MaterialComponentsScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BoxStackingScreen
@@ -51,6 +52,7 @@ private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostContr
     fun onBack() = myNavController.popBackStack()
 
     composable<MaterialComponentsExample> { MaterialComponentsScreen(::onBack) }
+    composable<SnackbarActionExample> { SnackbarActionScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setStateManagementNavGraphs(myNavController: NavHostController) {
