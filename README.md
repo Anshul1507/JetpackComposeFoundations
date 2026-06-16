@@ -34,6 +34,31 @@ This module focuses on the absolute fundamentals of layout composition, structur
 
 ---
 
+## 📱 Module 2: State Management & Side-Effects
+
+This module deep-dives into the mechanics of data flow, lifecycle-aware stream collection, state preservation, and asynchronous side-effect pipelines. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Local State Mutation**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/LocalStateExample.kt) | Storing and mutating UI-bound variables locally within a composable execution scope using remember and state subscription properties. | <img src="screenshots/state/local_state.gif" width="220" alt="Local State Preview"/> |
+| [**2. Configuration Survival**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/SaveableStateScreen.kt) | Preserving runtime user input or navigation data layers across screen orientation flips and system-driven Process Death using Bundle serialization. | <img src="screenshots/state/process_death.gif" width="220" alt="Process Death Preview"/> |
+| [**3. ViewModel & LiveData**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/ViewModelLiveScreen.kt) | Decoupling complex business logic architectures and converting traditional Android architecture legacy streams into reactive Compose snapshots. | <img src="screenshots/state/viewmodel_livedata.gif" width="220" alt="ViewModel LiveData Preview"/> |
+| [**4. StateFlow Async Collection**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/FlowCollectionScreen.kt) | Consuming asynchronous Flow streams via foreground-aware collectors that automatically pause tracking when the app is backgrounded. | <img src="screenshots/state/stateflow.gif" width="220" alt="State Flow Preview"/> |
+| [**5. Side-Effects & Coroutines**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/SideEffectsScreen.kt) | Safely executing asynchronous suspending jobs on screen load entry and bridging background coroutine tasks to standard UI user touch listener clicks. | <img src="screenshots/state/sideeffects_coroutines.gif" width="220" alt="Sideeffects Coroutines Preview"/> |
+| [**6. System Back Interception**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/BackHandlerScreen.kt) | Intercepting, halting, and custom handling device hardware buttons or gesture system back swipes to protect unsaved user form entries. | <img src="screenshots/state/back_press_interception.gif" width="220" alt="System Back Preview"/> |
+| [**7. State Hoisting Patterns**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/stateManagement/StateHoistingScreen.kt) | Refactoring stateful views into pure presentation widgets to build single-source-of-truth architectures that follow clean Unidirectional Data Flow (UDF). | <img src="screenshots/state/state_hoisting.jpg" width="220" alt="State Hoisting Preview"/> |
+
+---
+
+## 📱 Module 3: Material Design Components
+
+This module focuses on implementing standardized Material Design 3 interactive components, anchoring primary navigation elements, and configuring structural visual aesthetics like shadows, elevations, and responsive wrapping rows. Click on any example link to view its core source code implementation.
+
+
+
+
 ## 📂 Project Structure Directory
 
 To keep the repository clean and scalable for subsequent learning modules, the codebase uses a structured package arrangement:
@@ -52,6 +77,8 @@ app/src/main/java/com/anshul1507/composesamplefirst/practice/
 │   ├── screens/
 │   │   ├── DashboardScreen.kt   <-- Dynamic LazyColumn landing launch menu
 │   │   └── general/             <-- Module 1 code files (SimpleText, Clickable, Box, etc.)
+│   │   └── stateManagement/     <-- Module 2 code files (LocalState, StateHoisting, ViewModel, etc.)
+│   │   └── components/          <-- Module 3 code files (Cards, Button Styling, SnackBar, Drawer, etc.)
 │   │
 │   └── theme/
 │       ├── Color.kt             <-- Hex definitions for Light & Dark spectrums
@@ -83,9 +110,9 @@ git clone https://github.com/Anshul1507/ComposeSampleFirst.git
 
 [x] Module 1: General Basics, Core Layouts & Structural Modifiers (100% Completed)
 
-[ ] Module 2: State Management Architecture, Side-Effects, and ViewModels (Next Up!)
+[x] Module 2: State Management Architecture, Side-Effects, and ViewModels (100% Completed)
 
-[ ] Module 3: Rich Material Design Components & Layout Engineering
+[x] Module 3: Rich Material Design Components & Layout Engineering (100% Completed)
 
 [ ] Module 4: Advanced Media Sourcing, Drawing & Custom Canvas Views
 
