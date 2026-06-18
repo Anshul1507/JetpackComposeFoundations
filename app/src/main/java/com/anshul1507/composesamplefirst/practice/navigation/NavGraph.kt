@@ -38,6 +38,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.Vie
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.SearchBarScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.TextFieldCustomScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.TypographyAdvancedScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.VisualTransformationScreen
 
 
 @Composable
@@ -69,6 +70,7 @@ private fun NavGraphBuilder.setTypographyNavGraphs(myNavController: NavHostContr
     composable<TypographyAdvancedExample> { TypographyAdvancedScreen(::onBack) }
     composable<TextFieldCustomExample> { TextFieldCustomScreen(::onBack) }
     composable<SearchBarExample> { SearchBarScreen(::onBack) }
+    composable<VisualTransformationExample> { VisualTransformationScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostController) {

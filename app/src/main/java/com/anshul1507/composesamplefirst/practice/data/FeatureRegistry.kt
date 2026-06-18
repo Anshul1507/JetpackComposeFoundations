@@ -227,6 +227,12 @@ fun getTypographyRoutes(): List<FeatureExample> {
             description = "Implementing Material 3 SearchBars with dynamic query filtering and expandable results.",
             category = FeatureCategory.TYPOGRAPHY,
             destination = ScreenRoute.SearchBarExample
+        ),
+        FeatureExample(
+            title = "Visual Transformations",
+            description = "Implementing input masks for credit card grouping and secure password visibility toggles.",
+            category = FeatureCategory.TYPOGRAPHY,
+            destination = ScreenRoute.VisualTransformationExample
         )
     )
 }
