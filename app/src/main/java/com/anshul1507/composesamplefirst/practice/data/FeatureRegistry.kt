@@ -6,7 +6,8 @@ import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute
 enum class FeatureCategory(val displayName: String) {
     GENERAL("General Basics"),
     STATE_MANAGEMENT("State Management"),
-    COMPONENTS("Material Design Components")
+    COMPONENTS("Material Design Components"),
+    TYPOGRAPHY("Typography")
 }
 data class FeatureExample(
     val title: String,
@@ -19,6 +20,7 @@ object FeatureRegistry {
     val generalList = getGeneralRoutes()
     val stateManagementList = getStateManagementRoutes()
     val componentsList = getComponentsRoutes()
+    val typographyList = getTypographyRoutes()
 
     val items = generalList + stateManagementList + componentsList
 }
@@ -202,6 +204,17 @@ fun getComponentsRoutes(): List<FeatureExample> {
             description = "Mastering Material 3 tonal elevations and constructing custom drop-shadow rendering modifiers.",
             category = FeatureCategory.COMPONENTS,
             destination = ScreenRoute.CustomShadowExample
+        )
+    )
+}
+
+fun getTypographyRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Advanced Typography & Fonts",
+            description = "Mastering custom font families, inline text spans, and mixed weights within a single text element.",
+            category = FeatureCategory.TYPOGRAPHY,
+            destination = ScreenRoute.TypographyAdvancedExample
         )
     )
 }

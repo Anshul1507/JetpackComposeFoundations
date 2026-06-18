@@ -35,6 +35,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.Sav
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SideEffectsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.StateHoistingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ViewModelLiveScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.TypographyAdvancedScreen
 
 
 @Composable
@@ -56,7 +57,14 @@ fun AppNavGraph(myNavController: NavHostController) {
         setGeneralNavGraphs(myNavController)
         setStateManagementNavGraphs(myNavController)
         setComponentsNavGraphs(myNavController)
+        setTypographyNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setTypographyNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<TypographyAdvancedExample> { TypographyAdvancedScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostController) {

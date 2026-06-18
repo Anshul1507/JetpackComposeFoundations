@@ -75,6 +75,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object CustomShadowExample: ScreenRoute
 
+    /**
+     * TYPOGRAPHY AND ADVANCED TEXT
+     */
+    @Serializable
+    data object TypographyAdvancedExample: ScreenRoute
+
 
     //As we add the features through out, just append those routes here
 //    @Serializable
