@@ -2,13 +2,17 @@ package com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvan
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -18,13 +22,21 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextLinkStyles
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.withLink
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -44,6 +56,8 @@ fun TypographyAdvancedScreen(
     onBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    var consoleMessage by remember { mutableStateOf("Click a local text link action to run code...") }
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -117,6 +131,98 @@ fun TypographyAdvancedScreen(
                     fontSize = 15.sp,
                     lineHeight = 22.sp
                 )
+            }
+
+            // 3: Inline Hyperlinks & Custom Local Callbacks
+            TextSection(
+                title = "3. Inline Clickable Elements",
+                description = "Mixing production-grade web hyperlinks and specialized internal lambdas inside a single paragraph."
+            ) {
+                val linkedParaText = buildAnnotatedString {
+                    append("Explore the core open-source repository directly on ")
+
+                    // Adding an external web hyperlink
+                    withLink(
+                        link = LinkAnnotation.Url(
+                            url = "https://github.com/Anshul1507/JetpackComposeFoundations",
+                            styles = TextLinkStyles(
+                                style = SpanStyle(
+                                    color = MaterialTheme.colorScheme.primary,
+                                    fontWeight = FontWeight.Bold,
+                                    textDecoration = TextDecoration.Underline
+                                )
+                            )
+                        )
+                    ) {
+                        append("Github")
+                    }
+
+                    append(". Alternatively, you can click here to execute an ")
+
+                    // Adding an internal custom callback to trigger in-app behavior
+                    withLink(
+                        link = LinkAnnotation.Clickable(
+                            tag = "CUSTOM_CONSOLE_ACTION",
+                            styles = TextLinkStyles(
+                                style = SpanStyle(
+                                    color = MaterialTheme.colorScheme.tertiary,
+                                    fontWeight = FontWeight.Bold,
+                                    textDecoration = TextDecoration.Underline
+                                )
+                            ),
+                            linkInteractionListener = {
+                                consoleMessage = "Local inline link captured! Running business logic..."
+                            }
+                        )
+                    ) {
+                        append("internal app script")
+                    }
+
+                    append(".")
+                }
+
+                Text(
+                    text = linkedParaText,
+                    fontSize = 16.sp,
+                    lineHeight = 24.sp
+                )
+
+                Spacer(
+                    modifier = Modifier.height(12.dp)
+                )
+
+                Card(
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Text(
+                        text = consoleMessage,
+                        modifier = Modifier.padding(12.dp),
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                }
+            }
+
+            // 4: Text Selection Controls
+            TextSection(
+                title = "4. Copy/Paste Support (SelectionContainer)",
+                description = "By default, Text is not copyable. Wrap your elements inside a SelectionContainer to enable long-press copy hooks."
+            ) {
+                SelectionContainer {
+                    Column(
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                       Text(
+                           text = "Long press on this text string to bring up the Android system copy-paste handle overlay layout.",
+                           fontSize = 15.sp,
+                           lineHeight = 22.sp
+                       )
+                        Text(
+                            text = "Transactional Ref ID: #TRX-0000-COMPOSE",
+                            fontSize = 14.sp,
+                            color = MaterialTheme.colorScheme.outline
+                        )
+                    }
+                }
             }
         }
     }
