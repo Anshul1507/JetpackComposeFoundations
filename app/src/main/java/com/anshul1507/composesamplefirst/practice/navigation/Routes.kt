@@ -82,6 +82,8 @@ sealed interface ScreenRoute {
     data object TypographyAdvancedExample: ScreenRoute
     @Serializable
     data object TextFieldCustomExample: ScreenRoute
+    @Serializable
+    data object SearchBarExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

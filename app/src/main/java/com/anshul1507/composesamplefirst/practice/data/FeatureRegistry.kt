@@ -221,6 +221,12 @@ fun getTypographyRoutes(): List<FeatureExample> {
             description = "Mastering state-controlled input fields, error validations, custom styling, and numeric keyboards.",
             category = FeatureCategory.TYPOGRAPHY,
             destination = ScreenRoute.TextFieldCustomExample
+        ),
+        FeatureExample(
+            title = "Search Bars & Filtering",
+            description = "Implementing Material 3 SearchBars with dynamic query filtering and expandable results.",
+            category = FeatureCategory.TYPOGRAPHY,
+            destination = ScreenRoute.SearchBarExample
         )
     )
 }
