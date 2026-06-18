@@ -215,6 +215,12 @@ fun getTypographyRoutes(): List<FeatureExample> {
             description = "Mastering custom font families, inline text spans, and mixed weights within a single text element.",
             category = FeatureCategory.TYPOGRAPHY,
             destination = ScreenRoute.TypographyAdvancedExample
+        ),
+        FeatureExample(
+            title = "Custom TextFields & Inputs",
+            description = "Mastering state-controlled input fields, error validations, custom styling, and numeric keyboards.",
+            category = FeatureCategory.TYPOGRAPHY,
+            destination = ScreenRoute.TextFieldCustomExample
         )
     )
 }
