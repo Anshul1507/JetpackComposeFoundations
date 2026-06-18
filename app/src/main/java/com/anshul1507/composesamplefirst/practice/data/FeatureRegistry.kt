@@ -22,7 +22,7 @@ object FeatureRegistry {
     val componentsList = getComponentsRoutes()
     val typographyList = getTypographyRoutes()
 
-    val items = generalList + stateManagementList + componentsList
+    val items = generalList + stateManagementList + componentsList + typographyList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -233,6 +233,12 @@ fun getTypographyRoutes(): List<FeatureExample> {
             description = "Implementing input masks for credit card grouping and secure password visibility toggles.",
             category = FeatureCategory.TYPOGRAPHY,
             destination = ScreenRoute.VisualTransformationExample
+        ),
+        FeatureExample(
+            title = "Inline Text Animations",
+            description = "Swapping inline components and animating text fragments smoothly within a paragraph framework.",
+            category = FeatureCategory.TYPOGRAPHY,
+            destination = ScreenRoute.AnimatedTextInlineExample
         )
     )
 }

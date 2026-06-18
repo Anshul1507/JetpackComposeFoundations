@@ -86,6 +86,8 @@ sealed interface ScreenRoute {
     data object SearchBarExample: ScreenRoute
     @Serializable
     data object VisualTransformationExample: ScreenRoute
+    @Serializable
+    data object AnimatedTextInlineExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

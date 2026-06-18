@@ -35,6 +35,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.Sav
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.SideEffectsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.StateHoistingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.ViewModelLiveScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.AnimatedTextInlineScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.SearchBarScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.TextFieldCustomScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.typographyAndAdvancedText.TypographyAdvancedScreen
@@ -71,6 +72,7 @@ private fun NavGraphBuilder.setTypographyNavGraphs(myNavController: NavHostContr
     composable<TextFieldCustomExample> { TextFieldCustomScreen(::onBack) }
     composable<SearchBarExample> { SearchBarScreen(::onBack) }
     composable<VisualTransformationExample> { VisualTransformationScreen(::onBack) }
+    composable<AnimatedTextInlineExample> { AnimatedTextInlineScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setComponentsNavGraphs(myNavController: NavHostController) {
