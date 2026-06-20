@@ -258,6 +258,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Building smooth, horizontally scrollable content rows and carousel streams using LazyRow.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.LazyRowExample
+        ),
+        FeatureExample(
+            title = "Adaptive Spanning Grids",
+            description = "Implementing complex dashboard layouts using LazyVerticalGrid with custom responsive column spans.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.LazyGridExample
         )
     )
 }

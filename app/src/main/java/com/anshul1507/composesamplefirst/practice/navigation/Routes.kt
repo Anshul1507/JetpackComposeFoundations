@@ -96,6 +96,8 @@ sealed interface ScreenRoute {
     data object LazyColumnExample: ScreenRoute
     @Serializable
     data object LazyRowExample: ScreenRoute
+    @Serializable
+    data object LazyGridExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
