@@ -31,6 +31,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeSc
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyColumnScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyGridScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyRowScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.lists.StickyHeaderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.BackHandlerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.FlowCollectionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
@@ -75,6 +76,7 @@ private fun NavGraphBuilder.setVirtualizationNavGraphs(myNavController: NavHostC
     composable<LazyColumnExample> { LazyColumnScreen(::onBack) }
     composable<LazyRowExample> { LazyRowScreen(::onBack) }
     composable<LazyGridExample> { LazyGridScreen(::onBack) }
+    composable<StickyHeaderExample> { StickyHeaderScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setTypographyNavGraphs(myNavController: NavHostController) {

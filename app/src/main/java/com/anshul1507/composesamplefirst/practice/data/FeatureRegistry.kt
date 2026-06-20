@@ -264,6 +264,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Implementing complex dashboard layouts using LazyVerticalGrid with custom responsive column spans.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.LazyGridExample
+        ),
+        FeatureExample(
+            title = "Sticky Category Headers",
+            description = "Building structured lists with section headers that pin fluidly to the top of the viewport using stickyHeader.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.StickyHeaderExample
         )
     )
 }

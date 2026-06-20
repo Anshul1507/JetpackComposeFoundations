@@ -98,6 +98,8 @@ sealed interface ScreenRoute {
     data object LazyRowExample: ScreenRoute
     @Serializable
     data object LazyGridExample: ScreenRoute
+    @Serializable
+    data object StickyHeaderExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
