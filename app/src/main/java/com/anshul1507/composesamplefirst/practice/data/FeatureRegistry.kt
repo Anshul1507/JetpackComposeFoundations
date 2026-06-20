@@ -252,6 +252,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "High-performance vertical list virtualization equivalent to RecyclerView, utilizing keys and type tracking.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.LazyColumnExample
+        ),
+        FeatureExample(
+            title = "Horizontal Carousels",
+            description = "Building smooth, horizontally scrollable content rows and carousel streams using LazyRow.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.LazyRowExample
         )
     )
 }
