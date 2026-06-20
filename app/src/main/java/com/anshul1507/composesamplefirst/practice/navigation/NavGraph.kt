@@ -28,6 +28,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.EdgeToEdgeS
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyColumnScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.BackHandlerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.FlowCollectionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
@@ -62,7 +63,14 @@ fun AppNavGraph(myNavController: NavHostController) {
         setStateManagementNavGraphs(myNavController)
         setComponentsNavGraphs(myNavController)
         setTypographyNavGraphs(myNavController)
+        setVirtualizationNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setVirtualizationNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<LazyColumnExample> { LazyColumnScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setTypographyNavGraphs(myNavController: NavHostController) {

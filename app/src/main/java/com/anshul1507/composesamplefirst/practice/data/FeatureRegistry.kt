@@ -7,7 +7,8 @@ enum class FeatureCategory(val displayName: String) {
     GENERAL("General Basics"),
     STATE_MANAGEMENT("State Management"),
     COMPONENTS("Material Design Components"),
-    TYPOGRAPHY("Typography")
+    TYPOGRAPHY("Typography"),
+    VIRTUALIZATION("virtualization")
 }
 data class FeatureExample(
     val title: String,
@@ -21,8 +22,9 @@ object FeatureRegistry {
     val stateManagementList = getStateManagementRoutes()
     val componentsList = getComponentsRoutes()
     val typographyList = getTypographyRoutes()
+    val virtualizationList = getVirtualizationRoutes()
 
-    val items = generalList + stateManagementList + componentsList + typographyList
+    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -239,6 +241,17 @@ fun getTypographyRoutes(): List<FeatureExample> {
             description = "Swapping inline components and animating text fragments smoothly within a paragraph framework.",
             category = FeatureCategory.TYPOGRAPHY,
             destination = ScreenRoute.AnimatedTextInlineExample
+        )
+    )
+}
+
+fun getVirtualizationRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Vertical LazyColumn Lists",
+            description = "High-performance vertical list virtualization equivalent to RecyclerView, utilizing keys and type tracking.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.LazyColumnExample
         )
     )
 }

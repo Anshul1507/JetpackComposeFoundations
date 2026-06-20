@@ -89,6 +89,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object AnimatedTextInlineExample: ScreenRoute
 
+    /**
+     * VIRTUALIZATION ROUTES
+     */
+    @Serializable
+    data object LazyColumnExample: ScreenRoute
+
 
     //As we add the features through out, just append those routes here
 //    @Serializable
