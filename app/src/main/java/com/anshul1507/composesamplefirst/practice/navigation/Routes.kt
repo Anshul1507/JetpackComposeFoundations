@@ -100,6 +100,8 @@ sealed interface ScreenRoute {
     data object LazyGridExample: ScreenRoute
     @Serializable
     data object StickyHeaderExample: ScreenRoute
+    @Serializable
+    data object ScrollInterceptionExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

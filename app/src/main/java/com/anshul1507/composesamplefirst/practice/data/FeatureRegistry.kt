@@ -270,6 +270,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Building structured lists with section headers that pin fluidly to the top of the viewport using stickyHeader.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.StickyHeaderExample
+        ),
+        FeatureExample(
+            title = "Scroll State Metrics",
+            description = "Interacting with LazyListState to track scroll directions, capture viewport indices, and toggle dynamic FAB metrics.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.ScrollInterceptionExample
         )
     )
 }
