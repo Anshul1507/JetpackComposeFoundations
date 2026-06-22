@@ -104,6 +104,8 @@ sealed interface ScreenRoute {
     data object ScrollInterceptionExample: ScreenRoute
     @Serializable
     data object ListAnimationExample: ScreenRoute
+    @Serializable
+    data object InfiniteScrollExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

@@ -282,6 +282,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Leveraging Modifier.animateItem() to implement seamless item insertion, deletion, and reordering transitions.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.ListAnimationExample
+        ),
+        FeatureExample(
+            title = "Paging 3 Infinite Scroll",
+            description = "Integrating the Jetpack Paging 3 framework with LazyColumn to build production-grade infinite lists.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.InfiniteScrollExample
         )
     )
 }
