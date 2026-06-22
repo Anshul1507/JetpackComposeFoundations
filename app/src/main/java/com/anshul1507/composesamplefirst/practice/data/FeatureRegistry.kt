@@ -301,6 +301,12 @@ fun getMediaRoutes(): List<FeatureExample> {
             description = "Mastering local resource loading, shape masking, vector tinting, and content scaling configurations.",
             category = FeatureCategory.MEDIA,
             destination = ScreenRoute.StaticImageExample
+        ),
+        FeatureExample(
+            title = "Network Images via Coil",
+            description = "Implementing asynchronous image downloading, managing caching pipelines, and handling scale crossfades.",
+            category = FeatureCategory.MEDIA,
+            destination = ScreenRoute.NetworkImageExample
         )
     )
 }
