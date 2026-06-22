@@ -35,6 +35,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyRowScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.ListAnimationScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.ScrollInterceptionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.StickyHeaderScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.media.ImageCachingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.ImageLoaderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.NetworkImageScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.StaticImageScreen
@@ -83,6 +84,7 @@ private fun NavGraphBuilder.setMediaNavGraphs(myNavController: NavHostController
     composable<StaticImageExample> { StaticImageScreen(::onBack) }
     composable<NetworkImageExample> { NetworkImageScreen(::onBack) }
     composable<ImageLoaderExample> { ImageLoaderScreen(::onBack) }
+    composable<ImageCachingExample> { ImageCachingScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setVirtualizationNavGraphs(myNavController: NavHostController) {

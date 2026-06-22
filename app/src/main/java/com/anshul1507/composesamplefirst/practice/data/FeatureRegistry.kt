@@ -313,6 +313,12 @@ fun getMediaRoutes(): List<FeatureExample> {
             description = "Implementing infinite shimmer skeletons and circular progress spinners during asynchronous image network fetches.",
             category = FeatureCategory.MEDIA,
             destination = ScreenRoute.ImageLoaderExample
+        ),
+        FeatureExample(
+            title = "Advanced Caching & Scaling",
+            description = "Configuring LRU disk/memory caches and exploring visual matrix aspect crop manipulations.",
+            category = FeatureCategory.MEDIA,
+            destination = ScreenRoute.ImageCachingExample
         )
     )
 }
