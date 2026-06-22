@@ -24,6 +24,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
@@ -35,6 +38,8 @@ fun VideoPlaybackScreen(
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
+    //Explicitly grab the active system lifecycle owner context scope
+    val lifecycleOwner = LocalLifecycleOwner.current
     val sampleVideoUrl = "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
 
     // init exoplayer
@@ -48,8 +53,29 @@ fun VideoPlaybackScreen(
     }
 
     // ensuring the player instance drop resources cleanly when sliding away
-    DisposableEffect(Unit) {
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            when (event) {
+                // Resume playback when the app returns to the foreground
+                Lifecycle.Event.ON_START -> {
+                    exoPlayer.playWhenReady = true
+                }
+
+                //Pause playback automatically when the app goes into the background
+                Lifecycle.Event.ON_STOP -> {
+                    exoPlayer.playWhenReady = false
+                }
+
+                else -> {
+
+                }
+            }
+        }
+
+        lifecycleOwner.lifecycle.addObserver(observer)
+
         onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
             exoPlayer.release()
         }
     }

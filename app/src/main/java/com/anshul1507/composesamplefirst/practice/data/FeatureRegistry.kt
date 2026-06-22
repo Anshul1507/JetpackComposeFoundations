@@ -26,7 +26,7 @@ object FeatureRegistry {
     val virtualizationList = getVirtualizationRoutes()
     val mediaList = getMediaRoutes()
 
-    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList
+    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
