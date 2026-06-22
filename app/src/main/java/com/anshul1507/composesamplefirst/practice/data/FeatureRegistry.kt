@@ -319,6 +319,12 @@ fun getMediaRoutes(): List<FeatureExample> {
             description = "Configuring LRU disk/memory caches and exploring visual matrix aspect crop manipulations.",
             category = FeatureCategory.MEDIA,
             destination = ScreenRoute.ImageCachingExample
+        ),
+        FeatureExample(
+            title = "Video Playback Engine",
+            description = "Integrating the Media3 ExoPlayer engine within Composable layout loops via AndroidView wrappers.",
+            category = FeatureCategory.MEDIA,
+            destination = ScreenRoute.VideoPlaybackExample
         )
     )
 }

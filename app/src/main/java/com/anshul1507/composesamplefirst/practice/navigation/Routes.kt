@@ -118,6 +118,8 @@ sealed interface ScreenRoute {
     data object ImageLoaderExample: ScreenRoute
     @Serializable
     data object ImageCachingExample: ScreenRoute
+    @Serializable
+    data object VideoPlaybackExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

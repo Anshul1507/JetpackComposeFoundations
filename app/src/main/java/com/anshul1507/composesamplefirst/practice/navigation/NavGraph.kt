@@ -39,6 +39,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.media.ImageCachingS
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.ImageLoaderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.NetworkImageScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.media.StaticImageScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.media.VideoPlaybackScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.BackHandlerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.FlowCollectionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
@@ -85,6 +86,7 @@ private fun NavGraphBuilder.setMediaNavGraphs(myNavController: NavHostController
     composable<NetworkImageExample> { NetworkImageScreen(::onBack) }
     composable<ImageLoaderExample> { ImageLoaderScreen(::onBack) }
     composable<ImageCachingExample> { ImageCachingScreen(::onBack) }
+    composable<VideoPlaybackExample> { VideoPlaybackScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setVirtualizationNavGraphs(myNavController: NavHostController) {
