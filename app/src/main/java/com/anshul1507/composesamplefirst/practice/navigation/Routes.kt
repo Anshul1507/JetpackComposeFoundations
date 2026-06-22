@@ -107,6 +107,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object InfiniteScrollExample: ScreenRoute
 
+    /**
+     * MEDIA
+     */
+    @Serializable
+    data object StaticImageExample: ScreenRoute
+
 
     //As we add the features through out, just append those routes here
 //    @Serializable

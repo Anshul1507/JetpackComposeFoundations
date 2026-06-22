@@ -8,7 +8,8 @@ enum class FeatureCategory(val displayName: String) {
     STATE_MANAGEMENT("State Management"),
     COMPONENTS("Material Design Components"),
     TYPOGRAPHY("Typography"),
-    VIRTUALIZATION("virtualization")
+    VIRTUALIZATION("virtualization"),
+    MEDIA("media")
 }
 data class FeatureExample(
     val title: String,
@@ -23,6 +24,7 @@ object FeatureRegistry {
     val componentsList = getComponentsRoutes()
     val typographyList = getTypographyRoutes()
     val virtualizationList = getVirtualizationRoutes()
+    val mediaList = getMediaRoutes()
 
     val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList
 }
@@ -288,6 +290,17 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Integrating the Jetpack Paging 3 framework with LazyColumn to build production-grade infinite lists.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.InfiniteScrollExample
+        )
+    )
+}
+
+fun getMediaRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Static Images & Vector Tinting",
+            description = "Mastering local resource loading, shape masking, vector tinting, and content scaling configurations.",
+            category = FeatureCategory.MEDIA,
+            destination = ScreenRoute.StaticImageExample
         )
     )
 }

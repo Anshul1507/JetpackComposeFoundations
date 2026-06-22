@@ -35,6 +35,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyRowScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.ListAnimationScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.ScrollInterceptionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.StickyHeaderScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.media.StaticImageScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.BackHandlerScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.FlowCollectionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.stateManagement.LocalStateScreen
@@ -70,7 +71,14 @@ fun AppNavGraph(myNavController: NavHostController) {
         setComponentsNavGraphs(myNavController)
         setTypographyNavGraphs(myNavController)
         setVirtualizationNavGraphs(myNavController)
+        setMediaNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setMediaNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<StaticImageExample> { StaticImageScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setVirtualizationNavGraphs(myNavController: NavHostController) {
