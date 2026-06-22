@@ -276,6 +276,12 @@ fun getVirtualizationRoutes(): List<FeatureExample> {
             description = "Interacting with LazyListState to track scroll directions, capture viewport indices, and toggle dynamic FAB metrics.",
             category = FeatureCategory.VIRTUALIZATION,
             destination = ScreenRoute.ScrollInterceptionExample
+        ),
+        FeatureExample(
+            title = "Animated List Mutations",
+            description = "Leveraging Modifier.animateItem() to implement seamless item insertion, deletion, and reordering transitions.",
+            category = FeatureCategory.VIRTUALIZATION,
+            destination = ScreenRoute.ListAnimationExample
         )
     )
 }
