@@ -344,6 +344,12 @@ fun getAdvancedLayoutRoutes(): List<FeatureExample> {
             description = "Building highly complex, flat UI layouts using virtual Guidelines, dynamic Barriers, and Bias vectors.",
             category = FeatureCategory.ADVANCED_LAYOUTS,
             destination = ScreenRoute.ConstraintLayoutExample
+        ),
+        FeatureExample(
+            title = "Adaptive Decoupled Layouts",
+            description = "Splitting constraint profiles from view code and using BoxWithConstraints to swap responsive rules at runtime.",
+            category = FeatureCategory.ADVANCED_LAYOUTS,
+            destination = ScreenRoute.AdaptiveConstraintsExample
         )
     )
 }
