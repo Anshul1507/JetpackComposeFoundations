@@ -10,7 +10,8 @@ enum class FeatureCategory(val displayName: String) {
     TYPOGRAPHY("Typography"),
     VIRTUALIZATION("virtualization"),
     MEDIA("media"),
-    ADVANCED_LAYOUTS("Advanced Layouts")
+    ADVANCED_LAYOUTS("Advanced Layouts"),
+    CUSTOM_DRAWING("Custom Drawing")
 }
 data class FeatureExample(
     val title: String,
@@ -27,8 +28,9 @@ object FeatureRegistry {
     val virtualizationList = getVirtualizationRoutes()
     val mediaList = getMediaRoutes()
     val advancedLayoutList = getAdvancedLayoutRoutes()
+    val customDrawingList = getCustomDrawingRoutes()
 
-    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList + advancedLayoutList
+    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList + advancedLayoutList + customDrawingList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -356,6 +358,17 @@ fun getAdvancedLayoutRoutes(): List<FeatureExample> {
             description = "Querying and syncing the natural dimensions of dynamic child components before rendering.",
             category = FeatureCategory.ADVANCED_LAYOUTS,
             destination = ScreenRoute.IntrinsicLayoutsExample
+        )
+    )
+}
+
+fun getCustomDrawingRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Canvas & Geometric Shapes",
+            description = "Harnessing the Canvas API to paint performant vector paths, geometric rings, and dynamic gradient sweeps.",
+            category = FeatureCategory.CUSTOM_DRAWING,
+            destination = ScreenRoute.CanvasDrawingExample
         )
     )
 }

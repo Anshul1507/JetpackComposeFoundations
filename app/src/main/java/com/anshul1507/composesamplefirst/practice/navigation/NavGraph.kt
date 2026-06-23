@@ -20,6 +20,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.NavDrawe
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.RadioButtonScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SliderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.CanvasDrawingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BoxStackingScreen
@@ -81,7 +82,14 @@ fun AppNavGraph(myNavController: NavHostController) {
         setVirtualizationNavGraphs(myNavController)
         setMediaNavGraphs(myNavController)
         setAdvancedLayoutsNavGraphs(myNavController)
+        setCustomDrawingNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setCustomDrawingNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<CanvasDrawingExample> { CanvasDrawingScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHostController) {
@@ -91,7 +99,6 @@ private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHost
     composable<ConstraintLayoutExample> { ConstraintLayoutScreen(::onBack) }
     composable<AdaptiveConstraintsExample> { AdaptiveConstraintsScreen(::onBack) }
     composable<IntrinsicLayoutsExample> { IntrinsicLayoutScreen(::onBack) }
-
 }
 
 private fun NavGraphBuilder.setMediaNavGraphs(myNavController: NavHostController) {

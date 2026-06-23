@@ -133,6 +133,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object IntrinsicLayoutsExample: ScreenRoute
 
+    /**
+     * CUSTOM DRAWING
+     */
+    @Serializable
+    data object CanvasDrawingExample: ScreenRoute
+
 
     //As we add the features through out, just append those routes here
 //    @Serializable
