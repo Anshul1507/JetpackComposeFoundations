@@ -130,6 +130,8 @@ sealed interface ScreenRoute {
     data object ConstraintLayoutExample: ScreenRoute
     @Serializable
     data object AdaptiveConstraintsExample: ScreenRoute
+    @Serializable
+    data object IntrinsicLayoutsExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

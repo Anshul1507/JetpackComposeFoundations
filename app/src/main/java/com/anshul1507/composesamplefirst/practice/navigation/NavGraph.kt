@@ -31,6 +31,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeSc
 import com.anshul1507.composesamplefirst.practice.ui.screens.layouts.AdaptiveConstraintsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.layouts.ConstraintLayoutScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.layouts.FlexboxLayoutScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.layouts.IntrinsicLayoutScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.InfiniteScrollScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyColumnScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyGridScreen
@@ -89,6 +90,7 @@ private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHost
     composable<FlexboxLayoutsExample> { FlexboxLayoutScreen(::onBack) }
     composable<ConstraintLayoutExample> { ConstraintLayoutScreen(::onBack) }
     composable<AdaptiveConstraintsExample> { AdaptiveConstraintsScreen(::onBack) }
+    composable<IntrinsicLayoutsExample> { IntrinsicLayoutScreen(::onBack) }
 
 }
 

@@ -350,6 +350,12 @@ fun getAdvancedLayoutRoutes(): List<FeatureExample> {
             description = "Splitting constraint profiles from view code and using BoxWithConstraints to swap responsive rules at runtime.",
             category = FeatureCategory.ADVANCED_LAYOUTS,
             destination = ScreenRoute.AdaptiveConstraintsExample
+        ),
+        FeatureExample(
+            title = "Intrinsic Measurements",
+            description = "Querying and syncing the natural dimensions of dynamic child components before rendering.",
+            category = FeatureCategory.ADVANCED_LAYOUTS,
+            destination = ScreenRoute.IntrinsicLayoutsExample
         )
     )
 }
