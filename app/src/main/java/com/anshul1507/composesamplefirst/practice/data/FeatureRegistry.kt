@@ -338,6 +338,12 @@ fun getAdvancedLayoutRoutes(): List<FeatureExample> {
             description = "Mastering relative layout weights, Flexbox arrangements, and text baseline alignments.",
             category = FeatureCategory.ADVANCED_LAYOUTS,
             destination = ScreenRoute.FlexboxLayoutsExample
+        ),
+        FeatureExample(
+            title = "ConstraintLayout Primitives",
+            description = "Building highly complex, flat UI layouts using virtual Guidelines, dynamic Barriers, and Bias vectors.",
+            category = FeatureCategory.ADVANCED_LAYOUTS,
+            destination = ScreenRoute.ConstraintLayoutExample
         )
     )
 }

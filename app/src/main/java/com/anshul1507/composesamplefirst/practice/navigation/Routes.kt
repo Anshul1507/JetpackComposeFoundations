@@ -126,6 +126,8 @@ sealed interface ScreenRoute {
      */
     @Serializable
     data object FlexboxLayoutsExample: ScreenRoute
+    @Serializable
+    data object ConstraintLayoutExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
