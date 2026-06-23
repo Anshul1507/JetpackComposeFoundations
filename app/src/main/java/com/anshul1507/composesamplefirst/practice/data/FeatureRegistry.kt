@@ -9,7 +9,8 @@ enum class FeatureCategory(val displayName: String) {
     COMPONENTS("Material Design Components"),
     TYPOGRAPHY("Typography"),
     VIRTUALIZATION("virtualization"),
-    MEDIA("media")
+    MEDIA("media"),
+    ADVANCED_LAYOUTS("Advanced Layouts")
 }
 data class FeatureExample(
     val title: String,
@@ -25,8 +26,9 @@ object FeatureRegistry {
     val typographyList = getTypographyRoutes()
     val virtualizationList = getVirtualizationRoutes()
     val mediaList = getMediaRoutes()
+    val advancedLayoutList = getAdvancedLayoutRoutes()
 
-    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList
+    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList + advancedLayoutList
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -325,6 +327,17 @@ fun getMediaRoutes(): List<FeatureExample> {
             description = "Integrating the Media3 ExoPlayer engine within Composable layout loops via AndroidView wrappers.",
             category = FeatureCategory.MEDIA,
             destination = ScreenRoute.VideoPlaybackExample
+        )
+    )
+}
+
+fun getAdvancedLayoutRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Flexible Layouts & Flexbox Rules",
+            description = "Mastering relative layout weights, Flexbox arrangements, and text baseline alignments.",
+            category = FeatureCategory.ADVANCED_LAYOUTS,
+            destination = ScreenRoute.FlexboxLayoutsExample
         )
     )
 }

@@ -28,6 +28,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.general.EdgeToEdgeS
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.LayoutModifiersScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.SimpleTextScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.ThemeModeScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.layouts.FlexboxLayoutScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.InfiniteScrollScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyColumnScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.lists.LazyGridScreen
@@ -76,7 +77,15 @@ fun AppNavGraph(myNavController: NavHostController) {
         setTypographyNavGraphs(myNavController)
         setVirtualizationNavGraphs(myNavController)
         setMediaNavGraphs(myNavController)
+        setAdvancedLayoutsNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<FlexboxLayoutsExample> { FlexboxLayoutScreen(::onBack) }
+
 }
 
 private fun NavGraphBuilder.setMediaNavGraphs(myNavController: NavHostController) {

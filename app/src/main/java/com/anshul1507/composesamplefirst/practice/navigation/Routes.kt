@@ -121,6 +121,12 @@ sealed interface ScreenRoute {
     @Serializable
     data object VideoPlaybackExample: ScreenRoute
 
+    /**
+     * ADVANCED LAYOUTS
+     */
+    @Serializable
+    data object FlexboxLayoutsExample: ScreenRoute
+
 
     //As we add the features through out, just append those routes here
 //    @Serializable
