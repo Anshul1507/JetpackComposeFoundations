@@ -92,6 +92,24 @@ This module focuses on implementing standardized Material Design 3 interactive c
 
 ---
 
+## 📱 Module 5: Viewport Virtualization & Infinite Lists
+
+This module explores high-performance viewport virtualization using the Lazy layout ecosystem, covering everything from granular scroll telemetry and adaptive structural grids to infinite list pagination using Paging 3. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Vertical LazyColumn Lists**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/LazyColumnScreen.kt) | High-performance vertical list virtualization equivalent to RecyclerView, utilizing unique item layout keys and explicit content type tracking parameters. | <img src="screenshots/virtualization/lazy_column.gif" width="220" alt="LazyColumn Preview"/> |
+| [**2. Horizontal Carousels**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/LazyRowScreen.kt) | Building fluid, horizontally scrollable content rows, snapping view containers, and dashboard item carousel streams using LazyRow components. | <img src="screenshots/virtualization/horizontal_carousel.gif" width="220" alt="LazyRow Preview"/> |
+| [**3. Adaptive Spanning Grids**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/LazyGridScreen.kt) | Implementing non-uniform grid matrices using LazyVerticalGrid while mapping custom responsive column cell spanning constraints. | <img src="screenshots/virtualization/grid_layout.jpg" width="220" alt="LazyGrid Preview"/> |
+| [**4. Sticky Category Headers**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/StickyHeaderScreen.kt) | Using the experimental stickyHeader compilation block to engineer categorized list panels with section headers that pin fluidly to the top edge of the screen. | <img src="screenshots/virtualization/sticky_headers.jpg" width="220" alt="Sticky Header Preview"/> |
+| [**5. Scroll State Metrics**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/ScrollInterceptionScreen.kt) | Interacting directly with the LazyListState tracking engine to capture scrolling speed vector changes, track visible viewport indices, and drive smart UI actions. | <img src="screenshots/virtualization/scroll_interceptions.gif" width="220" alt="Scroll Interception Preview"/> |
+| [**6. Animated List Mutations**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/ListAnimationScreen.kt) | Utilizing the standard `Modifier.animateItem()` framework modifier parameters to execute layout transitions for virtualized item index insertions, deletions, and swaps. | <img src="screenshots/virtualization/animated_list_item.gif" width="220" alt="Animated Mutations Preview"/> |
+| [**7. Paging 3 Infinite Scroll**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/lists/InfiniteScrollScreen.kt) | Integrating the official Jetpack Paging 3 architecture framework with LazyColumn to build a real-time cursor-paginated infinite scroll layout network pipeline. | <img src="screenshots/virtualization/infinite_scroll.gif" width="220" alt="Paging 3 Infinite Scroll Preview"/> |
+
+---
+
 
 
 ## 📂 Project Structure Directory
@@ -115,6 +133,7 @@ app/src/main/java/com/anshul1507/composesamplefirst/practice/
 │   │   └── stateManagement/     <-- Module 2 code files (LocalState, StateHoisting, ViewModel, etc.)
 │   │   └── components/          <-- Module 3 code files (Cards, Button Styling, SnackBar, Drawer, etc.)
 │   │   └── typographyAndAdvancedText/  <-- Module 4 code files (Typography, TextField, Search, Mask, etc.)
+│   │   └── virtualization/      <-- Module 5 code files (Lazy Column, Carousel, Infinite Scrolling etc.)
 │   │
 │   └── theme/
 │       ├── Color.kt             <-- Hex definitions for Light & Dark spectrums
@@ -151,6 +170,8 @@ git clone https://github.com/Anshul1507/ComposeSampleFirst.git
 [x] Module 3: Rich Material Design Components & Layout Engineering (100% Completed)
 
 [x] Module 4: Typography & Advanced Text (100% Completed)
+
+[x] Module 5: Viewport Virtualization & Infinite Lists (100% Completed)
 
 Feel free to star ⭐ this repository if you find these practical implementations helpful for your Compose journey! Contributions, issue reports, or layout optimization suggestions are always welcome.
 
