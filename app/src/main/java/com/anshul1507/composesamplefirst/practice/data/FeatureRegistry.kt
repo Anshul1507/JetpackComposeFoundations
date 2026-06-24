@@ -11,7 +11,8 @@ enum class FeatureCategory(val displayName: String) {
     VIRTUALIZATION("virtualization"),
     MEDIA("media"),
     ADVANCED_LAYOUTS("Advanced Layouts"),
-    CUSTOM_DRAWING("Custom Drawing")
+    CUSTOM_DRAWING("Custom Drawing"),
+    ARCHITECTURE("Architecture Navigation InterOperability")
 }
 data class FeatureExample(
     val title: String,
@@ -29,8 +30,9 @@ object FeatureRegistry {
     val mediaList = getMediaRoutes()
     val advancedLayoutList = getAdvancedLayoutRoutes()
     val customDrawingList = getCustomDrawingRoutes()
+    val architectureRoutes = getArchitectureRoutes()
 
-    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList + advancedLayoutList + customDrawingList
+    val items = generalList + stateManagementList + componentsList + typographyList + virtualizationList + mediaList + advancedLayoutList + customDrawingList + architectureRoutes
 }
 
 fun getGeneralRoutes(): List<FeatureExample> {
@@ -387,6 +389,17 @@ fun getCustomDrawingRoutes(): List<FeatureExample> {
             description = "Capturing low-level raw coordinate touch inputs via awaitPointerEventScope to engineer a real-time digital sketch pad.",
             category = FeatureCategory.CUSTOM_DRAWING,
             destination = ScreenRoute.PaintCanvasExample
+        )
+    )
+}
+
+fun getArchitectureRoutes(): List<FeatureExample> {
+    return listOf(
+        FeatureExample(
+            title = "Type-Safe Navigation Framework",
+            description = "Passing compile-time safe parameters using modern Kotlin Serialization routes instead of fragile strings.",
+            category = FeatureCategory.ARCHITECTURE, // Adjust to your matching category enum token
+            destination = ScreenRoute.TypeSafeNavigationExample() // Initialized safely with default parameters
         )
     )
 }

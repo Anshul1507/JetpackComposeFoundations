@@ -5,8 +5,10 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.toRoute
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.TypeSafeNavigationScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNavScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.ButtonStylingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
@@ -86,7 +88,30 @@ fun AppNavGraph(myNavController: NavHostController) {
         setMediaNavGraphs(myNavController)
         setAdvancedLayoutsNavGraphs(myNavController)
         setCustomDrawingNavGraphs(myNavController)
+        setArchitectureNavGraphs(myNavController)
     }
+}
+
+private fun NavGraphBuilder.setArchitectureNavGraphs(myNavController: NavHostController) {
+    fun onBack() = myNavController.popBackStack()
+
+    composable<TypeSafeNavigationExample> { backStackEntry ->
+        val routeArgs: TypeSafeNavigationExample = backStackEntry.toRoute()
+        TypeSafeNavigationScreen(
+            currentNodeId = routeArgs.nodeId,
+            currentClearance = routeArgs.securityClearance,
+            onNavigationWithArgs = { targetNode, requiredClearance ->
+                myNavController.navigate(
+                    TypeSafeNavigationExample(
+                        nodeId = targetNode,
+                        securityClearance = requiredClearance
+                    )
+                )
+            },
+            onBack = ::onBack
+        )
+    }
+
 }
 
 private fun NavGraphBuilder.setCustomDrawingNavGraphs(myNavController: NavHostController) {
