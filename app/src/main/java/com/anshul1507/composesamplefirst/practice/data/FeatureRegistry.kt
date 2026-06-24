@@ -381,6 +381,12 @@ fun getCustomDrawingRoutes(): List<FeatureExample> {
             description = "Implementing transformation matrices for fluid user interaction, mapping pinch-to-zoom and panning gestural offsets.",
             category = FeatureCategory.CUSTOM_DRAWING,
             destination = ScreenRoute.ZoomPanExample
+        ),
+        FeatureExample(
+            title = "Raw Pointer Paint Canvas",
+            description = "Capturing low-level raw coordinate touch inputs via awaitPointerEventScope to engineer a real-time digital sketch pad.",
+            category = FeatureCategory.CUSTOM_DRAWING,
+            destination = ScreenRoute.PaintCanvasExample
         )
     )
 }
