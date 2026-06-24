@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    kotlin("kapt") // required for hilt code generation annotation processing
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -76,6 +78,11 @@ dependencies {
 
     // constraint layout
     implementation(libs.androidx.constraintlayout.compose)
+
+    // hilt dagger
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

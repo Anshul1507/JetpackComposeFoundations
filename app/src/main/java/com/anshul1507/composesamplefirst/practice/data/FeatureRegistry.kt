@@ -406,6 +406,12 @@ fun getArchitectureRoutes(): List<FeatureExample> {
             description = "Embedding legacy Android Views inside Compose layouts using AndroidView, and vice-versa.",
             category = FeatureCategory.ARCHITECTURE,
             destination = ScreenRoute.ViewInteroperableExample
+        ),
+        FeatureExample(
+            title = "Hilt DI & ViewModel Integration",
+            description = "Leveraging Hilt to inject scoping view models and tracking state pipelines using safe StateFlow flows.",
+            category = FeatureCategory.ARCHITECTURE,
+            destination = ScreenRoute.HiltInjectionExample
         )
     )
 }

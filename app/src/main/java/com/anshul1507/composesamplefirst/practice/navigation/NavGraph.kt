@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.HiltInjectScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.TypeSafeNavigationScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.ViewInteroperableScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNavScreen
@@ -113,6 +114,7 @@ private fun NavGraphBuilder.setArchitectureNavGraphs(myNavController: NavHostCon
         )
     }
     composable<ViewInteroperableExample> { ViewInteroperableScreen(::onBack) }
+    composable<HiltInjectionExample> { HiltInjectScreen(::onBack) }
 
 }
 

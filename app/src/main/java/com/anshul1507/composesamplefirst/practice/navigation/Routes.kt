@@ -155,6 +155,8 @@ sealed interface ScreenRoute {
     ): ScreenRoute // with args as constructor params
     @Serializable
     data object ViewInteroperableExample: ScreenRoute
+    @Serializable
+    data object HiltInjectionExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here
