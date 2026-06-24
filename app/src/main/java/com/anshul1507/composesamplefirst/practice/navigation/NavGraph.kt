@@ -21,6 +21,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.RadioBut
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SliderScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.CanvasDrawingScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.MeasuringScaleScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BoxStackingScreen
@@ -90,6 +91,7 @@ private fun NavGraphBuilder.setCustomDrawingNavGraphs(myNavController: NavHostCo
     fun onBack() = myNavController.popBackStack()
 
     composable<CanvasDrawingExample> { CanvasDrawingScreen(::onBack) }
+    composable<MeasuringScaleExample> { MeasuringScaleScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHostController) {

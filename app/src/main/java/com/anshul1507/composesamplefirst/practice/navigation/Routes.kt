@@ -138,6 +138,8 @@ sealed interface ScreenRoute {
      */
     @Serializable
     data object CanvasDrawingExample: ScreenRoute
+    @Serializable
+    data object MeasuringScaleExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

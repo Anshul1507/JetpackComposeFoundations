@@ -369,6 +369,12 @@ fun getCustomDrawingRoutes(): List<FeatureExample> {
             description = "Harnessing the Canvas API to paint performant vector paths, geometric rings, and dynamic gradient sweeps.",
             category = FeatureCategory.CUSTOM_DRAWING,
             destination = ScreenRoute.CanvasDrawingExample
+        ),
+        FeatureExample(
+            title = "Interactive Measuring Scale",
+            description = "Building a mathematically sound UI calibration ruler combining custom drawing loops with manual scroll state drag calculations.",
+            category = FeatureCategory.CUSTOM_DRAWING,
+            destination = ScreenRoute.MeasuringScaleExample
         )
     )
 }
