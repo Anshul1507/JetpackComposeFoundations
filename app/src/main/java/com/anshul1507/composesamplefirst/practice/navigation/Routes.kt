@@ -149,12 +149,12 @@ sealed interface ScreenRoute {
      * ARCHITECTURE, NAVIGATION & INTEROPERABILITY
      */
     @Serializable
-    data object PipelineDashboard: ScreenRoute // without args
-    @Serializable
     data class TypeSafeNavigationExample(
         val nodeId: String = "DEFAULT-NODE-2026",
         val securityClearance: Int = 1
     ): ScreenRoute // with args as constructor params
+    @Serializable
+    data object ViewInteroperableExample: ScreenRoute
 
 
     //As we add the features through out, just append those routes here

@@ -400,6 +400,12 @@ fun getArchitectureRoutes(): List<FeatureExample> {
             description = "Passing compile-time safe parameters using modern Kotlin Serialization routes instead of fragile strings.",
             category = FeatureCategory.ARCHITECTURE, // Adjust to your matching category enum token
             destination = ScreenRoute.TypeSafeNavigationExample() // Initialized safely with default parameters
+        ),
+        FeatureExample(
+            title = "Legacy View Interoperability",
+            description = "Embedding legacy Android Views inside Compose layouts using AndroidView, and vice-versa.",
+            category = FeatureCategory.ARCHITECTURE,
+            destination = ScreenRoute.ViewInteroperableExample
         )
     )
 }

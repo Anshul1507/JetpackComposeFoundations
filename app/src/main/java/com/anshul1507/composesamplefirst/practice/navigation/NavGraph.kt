@@ -9,6 +9,7 @@ import androidx.navigation.toRoute
 import com.anshul1507.composesamplefirst.practice.navigation.ScreenRoute.*
 import com.anshul1507.composesamplefirst.practice.ui.screens.DashboardScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.TypeSafeNavigationScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.architecture.ViewInteroperableScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.BottomNavScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.ButtonStylingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.CheckboxScreen
@@ -111,6 +112,7 @@ private fun NavGraphBuilder.setArchitectureNavGraphs(myNavController: NavHostCon
             onBack = ::onBack
         )
     }
+    composable<ViewInteroperableExample> { ViewInteroperableScreen(::onBack) }
 
 }
 
