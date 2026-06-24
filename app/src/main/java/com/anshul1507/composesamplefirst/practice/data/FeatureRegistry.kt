@@ -8,8 +8,8 @@ enum class FeatureCategory(val displayName: String) {
     STATE_MANAGEMENT("State Management"),
     COMPONENTS("Material Design Components"),
     TYPOGRAPHY("Typography"),
-    VIRTUALIZATION("virtualization"),
-    MEDIA("media"),
+    VIRTUALIZATION("Virtualization"),
+    MEDIA("Media"),
     ADVANCED_LAYOUTS("Advanced Layouts"),
     CUSTOM_DRAWING("Custom Drawing"),
     ARCHITECTURE("Architecture Navigation InterOperability")
