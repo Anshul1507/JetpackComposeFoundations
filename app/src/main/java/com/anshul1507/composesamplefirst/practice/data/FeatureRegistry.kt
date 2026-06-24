@@ -375,6 +375,12 @@ fun getCustomDrawingRoutes(): List<FeatureExample> {
             description = "Building a mathematically sound UI calibration ruler combining custom drawing loops with manual scroll state drag calculations.",
             category = FeatureCategory.CUSTOM_DRAWING,
             destination = ScreenRoute.MeasuringScaleExample
+        ),
+        FeatureExample(
+            title = "Multi-Touch Zoom & Pan",
+            description = "Implementing transformation matrices for fluid user interaction, mapping pinch-to-zoom and panning gestural offsets.",
+            category = FeatureCategory.CUSTOM_DRAWING,
+            destination = ScreenRoute.ZoomPanExample
         )
     )
 }

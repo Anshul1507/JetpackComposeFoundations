@@ -22,6 +22,7 @@ import com.anshul1507.composesamplefirst.practice.ui.screens.components.SliderSc
 import com.anshul1507.composesamplefirst.practice.ui.screens.components.SnackbarActionScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.CanvasDrawingScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.MeasuringScaleScreen
+import com.anshul1507.composesamplefirst.practice.ui.screens.customDrawing.ZoomPanScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.AnimationBasicsScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BackgroundColorScreen
 import com.anshul1507.composesamplefirst.practice.ui.screens.general.BoxStackingScreen
@@ -92,6 +93,7 @@ private fun NavGraphBuilder.setCustomDrawingNavGraphs(myNavController: NavHostCo
 
     composable<CanvasDrawingExample> { CanvasDrawingScreen(::onBack) }
     composable<MeasuringScaleExample> { MeasuringScaleScreen(::onBack) }
+    composable<ZoomPanExample> { ZoomPanScreen(::onBack) }
 }
 
 private fun NavGraphBuilder.setAdvancedLayoutsNavGraphs(myNavController: NavHostController) {
