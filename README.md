@@ -15,6 +15,24 @@ The project structure is driven by a data-driven menu engine utilizing modern **
 
 ---
 
+## 🗺️ Project Learning Path & Modules
+
+This repository tracks my step-by-step master practice run through the Jetpack Compose architecture. It spans foundational state mechanics all the way down to custom low-level graphics painting, multi-touch gestures, and enterprise production app architecture.
+
+Click on any module track link below to jump directly to its feature index table and source code directory mappings:
+
+* 📥 [**Module 1: Core Layout Primitives & State Mechanics**](#-module-1-general-basics--layout-core) — *Row, Column, Box layout structures, modifier chains, and fundamental mutable state tracking properties.*
+* 🔄 [**Module 2: State Management, Streams & Side-Effects**](#-module-2-state-management--side-effects) — *Configuration survival across process death, ViewModel bindings, and lifecycle-aware stream collections.*
+* ⚡  [**Module 3: Material Design Components**](#-module-3-material-design-components) — *All sort of basic material design components.*
+* 📊 [**Module 4: Typography, Input Fields & Visual Transformations**](#-module-4-typography-advanced) — *Custom font engines, custom text field states, SearchBar configurations, and secure input masking layers.*
+* 📜 [**Module 5: Viewport Virtualization & Infinite Scroll Lists**](#-module-5-viewport-virtualization--infinite-lists) — *LazyColumn indices, spanning grid matrices, sticky section headers, and Paging 3 infinite scroll integrations.*
+* 🎬 [**Module 6: Media, Asynchronous Graphics & Video Playback**](#-module-6-media-asynchronous-graphics--video-playback) — *Coil image network caches, skeleton shimmer loaders, LRU disk layers, and Media3 ExoPlayer engines.*
+* 📐 [**Module 7: Advanced Layout Engineering & Constraint Ecosystems**](#-module-7-advanced-layout-engineering--constraint-ecosystems) — *Flat layout hierarchies with ConstraintLayout primitives, adaptive decoupled layouts, and Intrinsic Measurements.*
+* 🎨 [**Module 8: Custom Drawing, Canvas Graphics & Gesture Systems**](#-module-8-custom-drawing-canvas-graphics--gestures) — *Canvas API vector path painting, measuring scale calibrations, multi-touch pinch zoom matrices, and raw pointer sketching.*
+* 🚀 [**Module 9: Production Architecture, Enterprise Navigation & Interoperability**](#-module-9-production-architecture-enterprise-navigation--interoperability) — *Type-safe Kotlin Serialization routes, legacy AndroidView WebView engines, and Hilt dependency injection graphs.*
+
+---
+
 ## 📱 Module 1: General Basics & Layout Core
 
 This module focuses on the absolute fundamentals of layout composition, structural drawing boundaries, and interaction behaviors. Click on any example link to view its core source code implementation.
