@@ -110,6 +110,66 @@ This module explores high-performance viewport virtualization using the Lazy lay
 
 ---
 
+## 📱 Module 6: Media, Asynchronous Graphics & Video Playback
+
+This module focuses on loading, caching, and optimizing local and remote visual media, rendering loading skeleton configurations, and hosting native video playback pipelines. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Static Images & Vector Tinting**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/media/StaticImageScreen.kt) | Working with local PNG/JPEG assets, applying XML vector tint overlays, shape-masking clipping, and handling ContentScale configuration profiles. | <img src="screenshots/media/static_images.jpg" width="220" alt="Static Images Preview"/> |
+| [**2. Network Images via Coil**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/media/NetworkImageScreen.kt) | Asynchronous image loading using the Coil engine, managing asset decoding pipelines, and implementing smooth transition crossfades on success. | <img src="screenshots/media/network_images.gif" width="220" alt="Network Images Preview"/> |
+| [**3. Image Shimmers & Loaders**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/media/ImageLoaderScreen.kt) | Designing infinite linear gradient animation shimmers and progress placeholders to serve as elegant structural skeleton screens while remote networks fetch. | <img src="screenshots/media/image_shimmers.gif" width="220" alt="Image Shimmers Preview"/> |
+| [**4. Advanced Caching & Scaling**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/media/ImageCachingScreen.kt) | Constructing dual-layer LRU (Least Recently Used) disk and memory caching layers paired with explicit matrix coordinates crop scaling optimization. | <img src="screenshots/media/advanced_caching.gif" width="220" alt="Advanced Caching Preview"/> |
+| [**5. Video Playback Engine**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/media/VideoPlaybackScreen.kt) | Embedding the Media3 ExoPlayer kernel architecture within Compose view trees using AndroidView nodes to run background-buffered hardware video render paths. | <img src="screenshots/media/video_playback.gif" width="220" alt="Video Playback Preview"/> |
+
+---
+
+## 📱 Module 7: Advanced Layout Engineering & Constraint Ecosystems
+
+This module explores complex UI structures, flat hierarchy layouts using ConstraintLayout primitives, adaptive runtime rule adjustments, and structural pre-calculation passes using Intrinsic Measurements. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Flexible Layouts & Flexbox Rules**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/layouts/FlexboxLayoutScreen.kt) | Managing relative item weights across multi-layered flows, utilizing Flexbox grouping arrangements, and forcing cross-component text baseline alignments. | <img src="screenshots/advancedLayouts/flexbox_layouts.jpg" width="220" alt="Flexbox Layouts Preview"/> |
+| [**2. ConstraintLayout Primitives**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/layouts/ConstraintLayoutScreen.kt) | Building complex flat screen hierarchies using decoupled inline references, virtual tracking Guidelines, responsive Barriers, and positional Bias layout vectors. | <img src="screenshots/advancedLayouts/constraint_primitives.jpg" width="220" alt="ConstraintLayout Primitives Preview"/> |
+| [**3. Adaptive Decoupled Layouts**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/layouts/AdaptiveConstraintsScreen.kt) | Separating complete design ConstraintSet profiles from structural view code blocks and parsing real-time available space via BoxWithConstraints wrappers. | <img src="screenshots/advancedLayouts/adaptive_constraints.gif" width="220" alt="Adaptive Constraints Preview"/> |
+| [**4. Intrinsic Measurements**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/layouts/IntrinsicLayoutScreen.kt) | Querying and synchronizing the natural, raw minimum and maximum dimensions of sibling child components before executing the final screen layout rendering pass. | <img src="screenshots/advancedLayouts/intrinsic_measurements.jpg" width="220" alt="Intrinsic Measurements Preview"/> |
+
+---
+
+## 📱 Module 8: Custom Drawing, Canvas Graphics & Gestures
+
+This module drops down past standard UI layouts into low-level rendering loops, low-level multi-touch pointer tracking, hardware-accelerated transformation layers, and math-driven drawing canvases. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Canvas & Geometric Shapes**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/customDrawing/CanvasDrawingScreen.kt) | Working with the drawing Canvas API, building vector graphics paths, drawing complex geometric shapes, and applying linear and radial gradient shader sweeps. | <img src="screenshots/drawing/canvas_shapes.jpg" width="220" alt="Canvas Shapes Preview"/> |
+| [**2. Interactive Measuring Scale**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/customDrawing/MeasuringScaleScreen.kt) | Building custom calibrations via math-driven coordinate calculations, handling dynamic text tick rendering, and combining canvas loops with manual drag gestures. | <img src="screenshots/drawing/measuring_scale.gif" width="220" alt="Measuring Scale Preview"/> |
+| [**3. Multi-Touch Zoom & Pan**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/customDrawing/ZoomPanScreen.kt) | Implementing hardware-accelerated graphicsLayer transformation matrices to support fluid pinch-to-zoom multi-finger scaling and translation drag panning. | <img src="screenshots/drawing/zoom_pan.gif" width="220" alt="Zoom and Pan Preview"/> |
+| [**4. Raw Pointer Paint Canvas**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/customDrawing/PaintCanvasScreen.kt) | Intercepting primitive hardware input touch arrays using low-level awaitPointerEventScope listeners to build a real-time digital sketch pad. | <img src="screenshots/drawing/paint_canvas.gif" width="220" alt="Paint Canvas Preview"/> |
+
+---
+
+## 📱 Module 9: Production Architecture, Enterprise Navigation & Interoperability
+
+This module covers clean architecture patterns for production codebases, type-safe navigation handling using modern Kotlin Serialization targets, embedding legacy View systems via platform interop layers, and setting up dependency injection graphs with Hilt. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Type-Safe Navigation Framework**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/architecture/TypeSafeNavigationScreen.kt) | Constructing compile-time safe destination routers using Kotlin Serialization schemas to pass complex argument parameters without relying on fragile string keys. | <img src="screenshots/architecture/typesafe_navigation.gif" width="220" alt="Type-Safe Navigation Preview"/> |
+| [**2. Legacy View Interoperability**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/architecture/ViewInteroperableScreen.kt) | Embedding classic platform Views (like a hardware-accelerated WebView) inside Compose layout trees using AndroidView, handling lifecycle bindings, and displaying overlay loaders. | <img src="screenshots/architecture/legacy_interop.gif" width="220" alt="Legacy View Interoperability Preview"/> |
+| [**3. Hilt DI & ViewModel Integration**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/architecture/HiltInjectScreen.kt) | Setting up an application-wide dependency container graph with Hilt, injecting lifecycle-scoped ViewModels via `hiltViewModel()`, and exposing UI state as observable StateFlows. | <img src="screenshots/architecture/hilt_injection.gif" width="220" alt="Hilt DI & ViewModel Preview"/> |
+
+---
+---
 
 
 ## 📂 Project Structure Directory
@@ -134,6 +194,10 @@ app/src/main/java/com/anshul1507/composesamplefirst/practice/
 │   │   └── components/          <-- Module 3 code files (Cards, Button Styling, SnackBar, Drawer, etc.)
 │   │   └── typographyAndAdvancedText/  <-- Module 4 code files (Typography, TextField, Search, Mask, etc.)
 │   │   └── virtualization/      <-- Module 5 code files (Lazy Column, Carousel, Infinite Scrolling etc.)
+│   │   └── media/               <-- Module 6 code files (Network Image, Shimmer, Video Playback etc.)
+│   │   └── layouts/             <-- Module 7 code files (Flexbox, Constraint Layout etc.)
+│   │   └── customDrawing/       <-- Module 8 code files (Canvas, Zoom in, Drag etc.)
+│   │   └── architecture/        <-- Module 9 code files (Navigation, Legacy View Interoperability etc.)
 │   │
 │   └── theme/
 │       ├── Color.kt             <-- Hex definitions for Light & Dark spectrums
@@ -172,6 +236,14 @@ git clone https://github.com/Anshul1507/ComposeSampleFirst.git
 [x] Module 4: Typography & Advanced Text (100% Completed)
 
 [x] Module 5: Viewport Virtualization & Infinite Lists (100% Completed)
+
+[x] Module 6: Media, Asynchronous Graphics & Video Playback (100% Completed)
+
+[x] Module 7: Advanced Layout Engineering & Constraint Ecosystems (100% Completed)
+
+[x] Module 8: Custom Drawing, Canvas Graphics & Gestures (100% Completed)
+
+[x] Module 9: Production Architecture, Enterprise Navigation & Interoperability (100% Completed)
 
 Feel free to star ⭐ this repository if you find these practical implementations helpful for your Compose journey! Contributions, issue reports, or layout optimization suggestions are always welcome.
 
