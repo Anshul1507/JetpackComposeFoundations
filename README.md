@@ -23,14 +23,14 @@ This module focuses on the absolute fundamentals of layout composition, structur
 
 | Example Feature | Technical Concept Covered | Screen Preview |
 | :--- | :--- | :--- |
-| [**1. Static & Dynamic Text Presentation**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/SimpleTextScreen.kt) | Standard layout text rendering using localized string interpolation and core `MaterialTheme.typography` design token integration. | <img src="screenshots/simple_text.png" width="220" alt="Simple Text Preview"/> |
-| [**2. Clickable Views & Interaction Sinks**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/ClickableScreen.kt) | Interactive execution states using `Modifier.clickable`, accessibility management (`enabled` flags), and handling silent inputs via `MutableInteractionSource`. | <img src="screenshots/clickable_views.png" width="220" alt="Clickable Views Preview"/> |
-| [**3. Layout Modifiers Engine**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/LayoutModifiersScreen.kt) | Spacing systems via sequential order-of-execution modifiers, floating visual layers (`.offset()`), and locking aspect dimensions using `.aspectRatio()`. | <img src="screenshots/layout_modifiers.png" width="220" alt="Layout Modifiers Preview"/> |
-| [**4. Backgrounds & Canvas Surfaces**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/BackgroundColorScreen.kt) | Painting solid container vectors, implementing linear gradient design brushes, and using semantic, dark-mode aware `Surface` nodes. | <img src="screenshots/background_colors.png" width="220" alt="Background Colors Preview"/> |
-| [**5. FrameLayout Layering Stacks**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/BoxStackingScreen.kt) | Building overlapping layouts inside a `Box`, positioning components with explicit child alignments, and optimizing bounds via `matchParentSize()`. | <img src="screenshots/box_stacking.png" width="220" alt="Box Stacking Preview"/> |
-| [**6. Micro-Interactions & Animations**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/AnimationBasicsScreen.kt) | State-driven UI updates using lifecycle-aware `rememberInfiniteTransition` loops and smooth value-driven `animateColorAsState` transitions. | <img src="screenshots/animation_basics.png" width="220" alt="Animation Basics Preview"/> |
-| [**7. System Theme & Dark Mode Config**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/ThemeModeScreen.kt) | Monitoring system theme flags using `isSystemInDarkTheme()`, preventing hardcoded hex maps, and applying localized theme overrides inline. | <img src="screenshots/theme_mode.png" width="220" alt="Theme Mode Preview"/> |
-| [**8. Immersive Edge-to-Edge Windows**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/EdgeToEdgeScreen.kt) | Drawing directly behind the OS system status and bottom navigation layers using `enableEdgeToEdge()` and core `WindowInsets` configurations. | <img src="screenshots/edge_to_edge.png" width="220" alt="Edge to Edge Preview"/> |
+| [**1. Static & Dynamic Text Presentation**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/SimpleTextScreen.kt) | Standard layout text rendering using localized string interpolation and core `MaterialTheme.typography` design token integration. | <img src="screenshots/general_basics/simple_text.png" width="220" alt="Simple Text Preview"/> |
+| [**2. Clickable Views & Interaction Sinks**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/ClickableScreen.kt) | Interactive execution states using `Modifier.clickable`, accessibility management (`enabled` flags), and handling silent inputs via `MutableInteractionSource`. | <img src="screenshots/general_basics/clickable_views.png" width="220" alt="Clickable Views Preview"/> |
+| [**3. Layout Modifiers Engine**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/LayoutModifiersScreen.kt) | Spacing systems via sequential order-of-execution modifiers, floating visual layers (`.offset()`), and locking aspect dimensions using `.aspectRatio()`. | <img src="screenshots/general_basics/layout_modifiers.png" width="220" alt="Layout Modifiers Preview"/> |
+| [**4. Backgrounds & Canvas Surfaces**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/BackgroundColorScreen.kt) | Painting solid container vectors, implementing linear gradient design brushes, and using semantic, dark-mode aware `Surface` nodes. | <img src="screenshots/general_basics/background_colors.png" width="220" alt="Background Colors Preview"/> |
+| [**5. FrameLayout Layering Stacks**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/BoxStackingScreen.kt) | Building overlapping layouts inside a `Box`, positioning components with explicit child alignments, and optimizing bounds via `matchParentSize()`. | <img src="screenshots/general_basics/box_stacking.png" width="220" alt="Box Stacking Preview"/> |
+| [**6. Micro-Interactions & Animations**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/AnimationBasicsScreen.kt) | State-driven UI updates using lifecycle-aware `rememberInfiniteTransition` loops and smooth value-driven `animateColorAsState` transitions. | <img src="screenshots/general_basics/animation_basics.png" width="220" alt="Animation Basics Preview"/> |
+| [**7. System Theme & Dark Mode Config**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/ThemeModeScreen.kt) | Monitoring system theme flags using `isSystemInDarkTheme()`, preventing hardcoded hex maps, and applying localized theme overrides inline. | <img src="screenshots/general_basics/theme_mode.png" width="220" alt="Theme Mode Preview"/> |
+| [**8. Immersive Edge-to-Edge Windows**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/general/EdgeToEdgeScreen.kt) | Drawing directly behind the OS system status and bottom navigation layers using `enableEdgeToEdge()` and core `WindowInsets` configurations. | <img src="screenshots/general_basics/edge_to_edge.png" width="220" alt="Edge to Edge Preview"/> |
 
 ---
 
@@ -76,6 +76,22 @@ This module focuses on implementing standardized Material Design 3 interactive c
 
 ---
 
+## 📱 Module 4: Typography Advanced
+
+This module focuses on implementing standardized Material Design 3 interactive components, anchoring primary navigation elements, and configuring structural visual aesthetics like shadows, elevations, and responsive wrapping rows. Click on any example link to view its core source code implementation.
+
+### Architectural Feature Index
+
+| Example Feature | Technical Concept Covered | Screen Preview |
+| :--- | :--- | :--- |
+| [**1. Advanced Typography & Fonts**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/typographyAndAdvancedText/TypographyAdvancedScreen.kt) | Custom font family loading, mixed fontweight layout arrangements, and rich text spans contained within a single text element baseline pass. | <img src="screenshots/typography/typography_advanced.jpg" width="220" alt="Advanced Typography Preview"/> |
+| [**2. Custom TextFields & Inputs**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/typographyAndAdvancedText/TextFieldCustomScreen.kt) | State-controlled custom form fields, handling error state boundaries, input parameters validation, and launching specialized numeric input panels. | <img src="screenshots/typography/custom_textfield.jpg" width="220" alt="Custom TextFields Preview"/> |
+| [**3. Search Bars & Filtering**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/typographyAndAdvancedText/SearchBarScreen.kt) | Implementing standardized Material 3 SearchBars paired with real-time state query filters and floating history expansion blocks. | <img src="screenshots/typography/search_bar.gif" width="220" alt="Search Bars Preview"/> |
+| [**4. Visual Transformations**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/typographyAndAdvancedText/VisualTransformationScreen.kt) | Applying input text manipulation layers (VisualTransformation) to format raw text fields into credit card block grouping and secure password characters. | <img src="screenshots/typography/visual_transformation.jpg" width="220" alt="Visual Transformations Preview"/> |
+| [**5. Inline Text Animations**](app/src/main/java/com/anshul1507/composesamplefirst/practice/ui/screens/typographyAndAdvancedText/AnimatedTextInlineScreen.kt) | Animating layout transitions for text nodes or dynamically swapping out components cleanly inside a running text layout. | <img src="screenshots/typography/inline_text_animations.gif" width="220" alt="Inline Text Animations Preview"/> |
+
+---
+
 
 
 ## 📂 Project Structure Directory
@@ -98,6 +114,7 @@ app/src/main/java/com/anshul1507/composesamplefirst/practice/
 │   │   └── general/             <-- Module 1 code files (SimpleText, Clickable, Box, etc.)
 │   │   └── stateManagement/     <-- Module 2 code files (LocalState, StateHoisting, ViewModel, etc.)
 │   │   └── components/          <-- Module 3 code files (Cards, Button Styling, SnackBar, Drawer, etc.)
+│   │   └── typographyAndAdvancedText/  <-- Module 4 code files (Typography, TextField, Search, Mask, etc.)
 │   │
 │   └── theme/
 │       ├── Color.kt             <-- Hex definitions for Light & Dark spectrums
@@ -133,7 +150,7 @@ git clone https://github.com/Anshul1507/ComposeSampleFirst.git
 
 [x] Module 3: Rich Material Design Components & Layout Engineering (100% Completed)
 
-[ ] Module 4: Advanced Media Sourcing, Drawing & Custom Canvas Views
+[x] Module 4: Typography & Advanced Text (100% Completed)
 
 Feel free to star ⭐ this repository if you find these practical implementations helpful for your Compose journey! Contributions, issue reports, or layout optimization suggestions are always welcome.
 
